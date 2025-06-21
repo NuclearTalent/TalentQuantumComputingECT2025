@@ -1,54 +1,68 @@
-# Week 1, June 16-20
 
-\#\#\#  Monday June 16
+# Program
 
-| Time | Topic | Lecturers |
-| :---- | :---- | :---- |
-|   8.00am-  9.00am | Registration |  |
-|   9.00am-  9.15am | Welcome by ECT\* director Bira van Kolck |  |
-|   9.15am-10.30am | Basic elements of quantum computing and brief review of relevant quantum mechanical properties. Qubits, density matrices, and entanglement. Short break included | Morten |
-| 10.30am-11.00am | Coffee break |  |
-| 11.00am-12.15pm | Quantum gates and quantum circuits | Morten |
-| 12.15pm-  2.30pm | Lunch |  |
-|   2.30pm-  6.00pm | Exercises on basic use of qiskit, playing with gates and measurements single qubit rotations \+ Euler angles two qubit gates state (or gate) teleportation \[for the more experts T-injection\] simulated errors? | Alessandro, Morten, perhaps all of us? |
+# **DTP/TALENT Program**
 
-\#\#\#  Tuesday June 17
+[Here](https://maps.app.goo.gl/Ucaufqk2NonAbp7H8) is a short, and biased, list of suggestions for places to eat nearby. Enjoy!
+
+# Week 2, June 23-27
+
+\#\#\#  Monday June 23
 
 | Time | Topic | Lecturers |
 | :---- | :---- | :---- |
-|   9.15am-10.30am | Repetition from Monday and start discussion of quantum simulations for spin models and their connection to nuclear physics (e.g. Jordan-Wigner transform) Measuring observables (direct, Hadamard test), non unitary gates | Morten |
-| 10.30am-11.00am | Coffee break |  |
-| 11.00am-12.15am | Measuring observables (direct, Hadamard test), non unitary gates.  Methods for Hamiltonian dynamics  | Alessandro and Ryan |
-| 12.15pm-  2.30pm | Lunch |  |
-|   2.30pm-  6.00pm | Exercises on basic implementation of time evolution and observables two site time evolution (e.g. Ising and/or Heisenberg model) measurement of some observable (on site particle density?) comparison with some exact evolution (with e.g. NumPy) \[for the more experts\] implement an Hadamard test | Alessandro, Morten, more? |
-
-\#\#\#  Wednesday June 18
-
-| Time | Topic | Lecturers |
-| :---- | :---- | :---- |
-|   9.15am-10.30am | Hamiltonian formulation of lattice gauge theories I | Zohreh |
-| 10.30am-11.00am | Coffee break |  |
-| 11.00am-12.15pm | Hamiltonian formulation of lattice gauge theories II | Zohreh |
-| 12.15pm-  2.30pm | Lunch |  |
-|   2.30pm-  6.00pm | Exercises on … Implement a 3 site Heisenberg evolution with PBC using a chain of 3 qubits  something on QFT? | Alessandro, Morten, more? |
-
-\#\#\#  Thursday June 19
-
-| Time | Topic | Lecturers |
-| :---- | :---- | :---- |
-|   9.15am-10.30am | Quantum computation of lattice gauge theories I | Zohreh |
-| 10.30am-11.00am | Coffee break |  |
-| 11.00am-12.15pm | Neutrino dynamics in dense environments (swap networks & qudits) | Ale |
-| 12.15pm-  2.30pm | Lunch |  |
-|   2.30pm-  6.00pm | Exercises on … | \*\*\* |
-
-\#\#\#  Friday June 20
-
-| Time | Topic | Lecturers |
-| :---- | :---- | :---- |
-|   9.15am-10.30am | Quantum computation of lattice gauge theories II | Zohreh |
+|   9.15am-10.00am | Variational quantum eigensolver (VQE) part 1, basic math and simple eigenvalue problem  [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune23/) | Morten |
+| 10.00am-10.15am | Break |  |
+| 10.15am-11.00am | VQE, part 2, performering measurements and finding eigenvalues with Qiskit and/or own code [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune23/)| Morten  |
 | 11.00am-11.30am | Coffee break |  |
-| 11.30am-12.15pm | Quantum computation of lattice gauge theories III | Zohreh |
-| 12.15pm-  2.30pm | Lunch |  |
-|   2.30pm-  6.00pm | Exercises on … | \*\*\* |
+| 11.30am-12.15pm | VQE, part 3, Nuclear Structure Hamiltonians and link with project on Lipkin Hamiltonian  model (or other model) [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune23/)| Morten |
+| 12.15pm-  2.00pm | Lunch |  |
+|   2.00pm-  5.00pm | Exercises on VQE and project work |  |
+
+\#\#\#  Tuesday June 24
+
+| Time | Topic | Lecturers |
+| :---- | :---- | :---- |
+|   9.15am-10.00am | Nuclear Hamiltonians and the Jordan-Wigner Transformation [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune24/)| Alexei |
+| 10.00am-10.15am | Break |  |
+| 10.15am-11.00am | Time evolution via Trotter [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune24/)| Ryan |
+| 11.00am-11.30am | Coffee break |  |
+| 11.30am-12.15pm | Measuring observables [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune24/)| Ryan |
+| 12.15pm-  2.00pm | Lunch |  |
+|   2.00pm-  3.00pm | Exercises on … |  |
+|   3.00pm-  4.00pm | [Seminar by Federica Mantegazzini, Quantum Technologies in Trento: experimental platforms and recent developments](https://sd.fbk.eu/en/people/detail/federica-mantegazzini/) |  |
+|                   | Several research teams in Trento are working in the field of quantum technologies, creating strong synergies and collaborations between groups at FBK, University of Trento, INFN-TIFPA and CNR, and with the support of the joint laboratory Q@TN. In this seminar, an overview of the quantum experimental platforms that are studied and developed in Trento will be given, with a focus on the field of superconducting quantum circuits. The development steps to build a superconducting device will be described, starting from design and simulations, followed by microfabrication and cryogenic measurements. FInally, examples of recent results in this field will be reviewed. | |
+|   4.00pm-  5.00pm | Exercises on VQE  and project work |  |
+
+
+\#\#\#  Wednesday June 25
+
+| Time | Topic | Lecturers |
+| :---- | :---- | :---- |
+|   9.15am-10.00am |  Quantum Fourier Transforms (QFTs) [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/WednesdayJune25/) | Alexei |
+| 10.00am-10.15am | Break |  |
+| 10.15am-11.00am | Quantum Phase Estimation I [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/WednesdayJune25/)| Ryan |
+| 11.00am-11.30am | Coffee break |  |
+| 11.30am-12.15pm | Quantum Phase Estimation II [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/WednesdayJune25/)| Alexei, Ryan |
+| 12.15pm-  2.00pm | Lunch |  |
+|   2.00pm-  5.00pm | Project work |  |
+
+\#\#\#  Thursday June 26
+
+Feste Vigiliane, ECT* is closed on Thursday
+
+\#\#\#  Friday June 27
+
+| Time | Topic | Lecturers |
+| :---- | :---- | :---- |
+|   9.15am-10.00am | Quantum channels & errors [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/FridayJune27/)| Ryan |
+| 10.00am-10.15am | Break |  |
+| 10.15am-11.00am | Quantum error mitigation [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/FridayJune27/) | Ryan |
+| 11.00am-11.30am | Coffee break |  |
+| 11.30am-12.15pm | State preparation for the Schwinger model [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/FridayJune27/) | Alexei |
+| 12.15pm-  2.00pm | Lunch |  |
+|   2.00pm-  5.00pm | Project work |  |
+
+
+
 
