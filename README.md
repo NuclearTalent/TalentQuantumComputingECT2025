@@ -69,7 +69,7 @@ notes, exercises and projects are also available in the program here
 | 11.00am-11.30am | Coffee break |  |
 | 11.30am-12.15pm | Quantum-computation of time evolution in a gauge theory III [Lecture material](https://drive.google.com/file/d/1pCn-q7zwCfVOBq-YJsgTK0Wx_1GWgzo0/view?usp=sharing) | Zohreh |
 | 12.15pm-  2.00pm | Lunch |  |
-|   2.00pm-  5.00pm | Exercises [Exercises](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises)  | \*\*\* |
+|   2.00pm-  5.00pm | Exercises [Exercises](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises)  | |
 
 \#\#\#  Friday June 20
 
