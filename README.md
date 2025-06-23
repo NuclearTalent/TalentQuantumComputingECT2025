@@ -95,7 +95,7 @@ notes, exercises and projects are also available in the program here
 | 11.00am-11.30am | Coffee break |  |
 | 11.30am-12.15pm | VQE, part 3, Nuclear Structure Hamiltonians and link with project on Lipkin Hamiltonian  model (or other model) [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune23/)| Morten |
 | 12.15pm-  2.00pm | Lunch |  |
-|   2.00pm-  5.00pm | Exercises on VQE and project work |  |
+|   2.00pm-  5.00pm | VQE Exercises  |  |
 
 \#\#\#  Tuesday June 24
 
@@ -107,10 +107,10 @@ notes, exercises and projects are also available in the program here
 | 11.00am-11.30am | Coffee break |  |
 | 11.30am-12.15pm | Measuring observables [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune24/)| Ryan |
 | 12.15pm-  2.00pm | Lunch |  |
-|   2.00pm-  3.00pm | Exercises on … |  |
+|   2.00pm-  3.00pm | Exercises |  |
 |   3.00pm-  4.00pm | [Seminar by Federica Mantegazzini, Quantum Technologies in Trento: experimental platforms and recent developments](https://sd.fbk.eu/en/people/detail/federica-mantegazzini/) |  |
 |                   | Several research teams in Trento are working in the field of quantum technologies, creating strong synergies and collaborations between groups at FBK, University of Trento, INFN-TIFPA and CNR, and with the support of the joint laboratory Q@TN. In this seminar, an overview of the quantum experimental platforms that are studied and developed in Trento will be given, with a focus on the field of superconducting quantum circuits. The development steps to build a superconducting device will be described, starting from design and simulations, followed by microfabrication and cryogenic measurements. FInally, examples of recent results in this field will be reviewed. | |
-|   4.00pm-  5.00pm | Exercises on VQE  and project work |  |
+|   4.00pm-  5.00pm | Exercises |  |
 
 
 \#\#\#  Wednesday June 25
@@ -123,7 +123,7 @@ notes, exercises and projects are also available in the program here
 | 11.00am-11.30am | Coffee break |  |
 | 11.30am-12.15pm | Quantum Phase Estimation II [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/WednesdayJune25/)| Ryan |
 | 12.15pm-  2.00pm | Lunch |  |
-|   2.00pm-  5.00pm | Project work |  |
+|   2.00pm-  5.00pm | Exercises and project work |  |
 
 \#\#\#  Thursday June 26
 
@@ -139,7 +139,7 @@ Feste Vigiliane, ECT* is closed on Thursday
 | 11.00am-11.30am | Coffee break |  |
 | 11.30am-12.15pm | State preparation for the Schwinger model [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/FridayJune27/) | Alexei |
 | 12.15pm-  2.00pm | Lunch |  |
-|   2.00pm-  5.00pm | Project work |  |
+|   2.00pm-  5.00pm | Exercises and project work  |  |
 
 # Week 3, June 30-July 4
 
