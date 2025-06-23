@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+\PYG{k+kn}{from} \PYG{n+nn}{random} \PYG{k+kn}{import} \PYG{n}{random}
+\PYG{k+kn}{from} \PYG{n+nn}{qiskit} \PYG{k+kn}{import} \PYG{o}{*}
+\PYG{k}{def} \PYG{n+nf}{quantum\PYGZus{}state\PYGZus{}preparation}\PYG{p}{(}\PYG{n}{circuit}\PYG{p}{,} \PYG{n}{parameters}\PYG{p}{):}
+    \PYG{n}{q} \PYG{o}{=} \PYG{n}{circuit}\PYG{o}{.}\PYG{n}{qregs}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{c+c1}{\PYGZsh{} q is the quantum register where the info about qubits is stored}
+    \PYG{n}{circuit}\PYG{o}{.}\PYG{n}{rx}\PYG{p}{(}\PYG{n}{parameters}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{],} \PYG{n}{q}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])} \PYG{c+c1}{\PYGZsh{} q[0] is our one and only qubit XD}
+    \PYG{n}{circuit}\PYG{o}{.}\PYG{n}{ry}\PYG{p}{(}\PYG{n}{parameters}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{],} \PYG{n}{q}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])}
+    \PYG{k}{return} \PYG{n}{circuit}
+
+\end{Verbatim}
