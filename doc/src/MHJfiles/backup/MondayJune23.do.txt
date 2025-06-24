@@ -2275,9 +2275,78 @@ print("Optimal parameters:", np.round(result.optimal_parameters, 5))
 ===== A more interesting case, the hydrogen molecule =====
 
 !bc pycod
+import numpy as np
+import matplotlib.pyplot as plt
 
+from qiskit_nature.second_q.drivers import PySCFDriver
+from qiskit_nature.second_q.transformers import ActiveSpaceTransformer
+from qiskit_nature.second_q.mappers import JordanWignerMapper
+from qiskit_nature.converters.second_quantization import QubitConverter
+from qiskit_nature.second_q.problems import ElectronicStructureProblem
+
+from qiskit_nature.algorithms import GroundStateEigensolver, VQEUCCFactory, NumPyMinimumEigensolverFactory
+from qiskit.algorithms.optimizers import COBYLA
+from qiskit.primitives import Estimator
+from qiskit.utils import algorithm_globals
+
+# Set random seed
+algorithm_globals.random_seed = 42
+
+# Bond distances (Å)
+bond_lengths = np.linspace(0.2, 2.5, 12)
+vqe_energies = []
+exact_energies = []
+
+# Common objects
+optimizer = COBYLA(maxiter=250)
+estimator = Estimator()
+mapper = JordanWignerMapper()
+converter = QubitConverter(mapper=mapper)
+
+# Loop over distances
+for d in bond_lengths:
+    molecule = f"H 0 0 0; H 0 0 {d}"
+    driver = PySCFDriver(atom=molecule, basis="sto3g", spin=0, charge=0)
+    problem = ElectronicStructureProblem(driver)
+
+    transformer = ActiveSpaceTransformer(num_electrons=2, num_spatial_orbitals=2)
+    problem = transformer.transform(problem)
+
+    # VQE with UCCSD ansatz
+    vqe_solver = VQEUCCFactory(estimator=estimator, optimizer=optimizer)
+    vqe_gs_solver = GroundStateEigensolver(converter, vqe_solver)
+    vqe_result = vqe_gs_solver.solve(problem)
+    vqe_energies.append(vqe_result.total_energies[0])
+
+    # Exact solver
+    exact_solver = GroundStateEigensolver(converter, NumPyMinimumEigensolverFactory())
+    exact_result = exact_solver.solve(problem)
+    exact_energies.append(exact_result.total_energies[0])
+
+# Plotting
+plt.plot(bond_lengths, vqe_energies, 'o-', label='VQE (UCCSD)')
+plt.plot(bond_lengths, exact_energies, 'x--', label='Exact')
+plt.xlabel('Bond distance (Å)')
+plt.ylabel('Energy (Hartree)')
+plt.title('H₂ Ground State Energy')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
 !ec
 
+You can also run on the IBM hardware by using the following commands and replace
+!bc pycod
+from qiskit.primitives import Estimator
+estimator = Estimator()
+!ec
+with
+!bc pycod
+from qiskit_ibm_runtime import QiskitRuntimeService, Estimator as RuntimeEstimator
+service = QiskitRuntimeService(channel="ibm_quantum")
+estimator = RuntimeEstimator(session=service.session(backend="ibmq_qasm_simulator"))
+!ec
+Here you need an IBM Quantum account and login-token.
 
 !split
 ===== Lipkin model =====
