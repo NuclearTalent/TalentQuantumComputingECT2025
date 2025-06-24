@@ -2268,7 +2268,89 @@ print("Optimal parameters:", np.round(result.optimal_parameters, 5))
 
 !ec
 
+!split
+===== Same system using Pennylane as software =====
 
+Here we present a parameterized ansatz circuit $U(\alpha)$ and we
+compute the energy expectation $E(\alpha)=\langle 0|U(\alpha)^\dagger
+H U(\alpha)|0\rangle$ together with a classical optimizer to update
+the parameters $\alpha$.  We define again a random complex $4\times 4$
+matrix and make it hermitian.  We choose a simple two-qubit ansatz
+with two layers of single-qubit rotations with an entangling CNOT in
+between.  We use two $R_y$ rotations on each qubit, a CNOT, then
+another two $R_y$ rotations.  This *hardware-efficient* ansatz can, in
+principle, explore the four-dimensional state space.  We then define a
+PennyLane QNode that returns the expectation value of $H$ for a given
+parameter vector.
+
+We use a classical optimizer to minimize the energy. For example,
+PennyLane’s AdamOptimizer (an adaptive gradient-descent method) can be
+used. We iteratively update the parameters to reduce the cost. The
+code below initializes random parameters and runs gradient-based
+updates, printing the energy every ten iterations.
+
+
+
+!bc pycod
+
+
+import pennylane as qml
+from pennylane import numpy as qnp
+import numpy as np
+
+np.random.seed(0)  # reproducibility
+# Create a random complex 4×4 matrix
+A = np.random.rand(4,4) + 1j * np.random.rand(4,4)
+# Make it Hermitian
+H_matrix = (A + A.conj().T) / 2
+
+
+# Define the qubit wires
+wires = [0, 1]
+# Wrap the matrix as a PennyLane Hermitian observable on wires 0 and 1
+obs = qml.Hermitian(H_matrix, wires=wires)
+# Create a Hamiltonian with a single term (coefficient 1.0)
+H = qml.Hamiltonian([1.0], [obs])
+$ H represents our 4×4 Hamiltonian on the 2-qubit system.
+
+
+
+# Use PennyLane's default.qubit simulator
+dev = qml.device("default.qubit", wires=wires)
+
+@qml.qnode(dev)
+def circuit(params):
+    # First layer of single-qubit rotations
+    qml.RY(params[0], wires=0)
+    qml.RY(params[1], wires=1)
+    # Entangling CNOT
+    qml.CNOT(wires=[0, 1])
+    # Second layer of rotations
+    qml.RY(params[2], wires=0)
+    qml.RY(params[3], wires=1)
+    # Return the expectation of the Hamiltonian H
+    return qml.expval(H)
+
+
+# Initialize random parameters (4 angles)
+params = qnp.random.random(4, requires_grad=True)
+opt = qml.AdamOptimizer(stepsize=0.1)
+max_iters = 100
+
+# VQE loop: update parameters to minimize circuit(params)
+for n in range(max_iters):
+    params, energy = opt.step_and_cost(circuit, params)
+    if n % 10 == 0:
+        print(f"Iteration {n}: Energy = {energy:.6f}")
+
+print("VQE computed ground state energy:", energy)
+
+# Compute exact eigenvalues for comparison
+
+eigvals = np.linalg.eigvalsh(H_matrix)
+exact_energy = np.min(eigvals)
+print("Exact ground state energy:", exact_energy)
+!ec
 
 
 !split
