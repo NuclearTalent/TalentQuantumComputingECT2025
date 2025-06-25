@@ -123,7 +123,7 @@ notes, exercises and projects are also available in the program here
 | 11.00am-11.30am | Coffee break |  |
 | 11.30am-12.15pm | Quantum Phase Estimation II [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/WednesdayJune25/)| Ryan |
 | 12.15pm-  2.00pm | Lunch |  |
-|   2.00pm-  5.00pm | Exercises and project work |  |
+|   2.00pm-  5.00pm | [Exercise on QPE](https://colab.research.google.com/drive/16cgf3gOcz0Q6JRJzcIqhFZXh-17mscmM?usp=sharing) and project work |  |
 
 \#\#\#  Thursday June 26
 
