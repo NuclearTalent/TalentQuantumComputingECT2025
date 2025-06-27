@@ -153,7 +153,7 @@ Feste Vigiliane, ECT* is closed on Thursday
 | 11.00am-11.30am | Coffee break |  |
 | 11.30am-12.15pm | Rodeo algorithm, adiabatic state preparation and application to nuclear physics, part 3 [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune30/) | Dean |
 | 12.15pm-  2.00pm | Lunch |  |
-|   2.00pm-  5.00pm | Exercises on … |  |
+|   2.00pm-  5.00pm | Project work |  |
 
 \#\#\#  Tuesday July 1
 
@@ -165,7 +165,7 @@ Feste Vigiliane, ECT* is closed on Thursday
 | 11.00am-11.30am | Coffee break |  |
 | 11.30am-12.15pm | Rodeo algorithm, adiabatic state preparation and application to nuclear physics, part 6 [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJuly1/) | Dean |
 | 12.15pm-  2.00pm | Lunch |  |
-|   2.00pm-  5.00pm | Exercises on … |  |
+|   2.00pm-  5.00pm | Project work |  |
 
 \#\#\#  Wednesday July 2
 
@@ -177,7 +177,7 @@ Feste Vigiliane, ECT* is closed on Thursday
 | 11.00am-11.30am | Coffee break |  |
 | 11.30am-12.15pm | Modern techniques (LCU,QSP,QDRIFT), part 3 [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/WednesdayJuly2/) | Alessandro |
 | 12.15pm-  2.00pm | Lunch |  |
-|   2.00pm-  5.00pm | Exercises on … |  |
+|   2.00pm-  5.00pm | Project work |  |
 
 \#\#\#  Thursday July 3
 
@@ -187,21 +187,21 @@ Feste Vigiliane, ECT* is closed on Thursday
 | 10.00am-10.15am | Break |  |
 | 10.15am-11.00am | Quantum error correction, part 2 [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/ThursdayJuly3/) | Alessandro |
 | 11.00am-11.30am | Coffee break |  |
-| 11.30am-12.15pm | Discussion of projects | |
+| 11.30am-12.15pm | Discussion of projects and summary of course | |
 | 12.15pm-  2.00pm | Lunch |  |
-|   2.00pm-  5.00pm | Exercises on … |  |
+|   2.00pm-  5.00pm | Project work |  |
 
 \#\#\#  Friday July 4
 
 | Time | Topic | Lecturers |
 | :---- | :---- | :---- |
-|   9.15am-10.00am | Discussion of projects |  |
+|   9.15am-10.00am | Discussion of and work on projects |  |
 | 10.00am-10.15am | Break |  |
-| 10.15am-11.00am | Discussion of projects |  |
+| 10.15am-11.00am | Discussion of and work on projects |  |
 | 11.00am-11.30am | Coffee break |  |
-| 11.30am-12.15pm | Discussion of projects |  |
+| 11.30am-12.15pm | Discussion of and work on projects |  |
 | 12.15pm-  2.00pm | Lunch |  |
-|   2.00pm-  5.00pm | Exercises on … |  |
+|   2.00pm-  5.00pm | Project work and end of Talent course |  |
 
 
 
