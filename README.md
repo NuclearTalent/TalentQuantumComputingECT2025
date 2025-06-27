@@ -139,7 +139,7 @@ Feste Vigiliane, ECT* is closed on Thursday
 | 11.00am-11.30am | Coffee break |  |
 | 11.30am-12.15pm | State preparation for the Schwinger model [Lecture material](https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/FridayJune27/) | Alexei |
 | 12.15pm-  2.00pm | Lunch |  |
-|   2.00pm-  5.00pm | Exercises and project work  |  |
+|   2.00pm-  5.00pm | [Exercise on ZNE](https://colab.research.google.com/drive/1oMrqgKfs_g_K8jGAvA9c0O7vuIVUDzZ9?usp=sharing) and project work  |  |
 
 # Week 3, June 30-July 4
 
