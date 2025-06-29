@@ -1,4 +1,4 @@
-TITLE: Basic elements of quantum computing
+TITLE: Variational Quantum Eigensolver and simpler Hamiltonians
 AUTHOR: Nuclear TALENT course on quantum computing
 DATE: Monday June 23, 2025
 
