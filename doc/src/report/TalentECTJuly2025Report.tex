@@ -7,6 +7,10 @@
 \usepackage{dcolumn}
 \usepackage{multirow} 
 \usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
 
 \usepackage[T1]{fontenc}       % DC-fonts
 \begin{document}
@@ -28,21 +32,6 @@ This was the fourth course which has been held at the ECT*, the first one in 201
 \section{Report }
 
 \subsection{Introduction}
-The nuclear shell model plays  a central role in guiding our analysis of the wealth of nuclear structure 
-experimental data.
-It provides an excellent link to the underlying nuclear forces and the pertinent laws of motion,
-allowing nuclear physicists to interpret complicated experiments in terms of various 
-components of the nuclear Hamiltonian and to understand a swath of nuclei by following chains of isotopes and isotones over wide ranges of nucleon numbers. The nuclear shell model allows us to see how the structure of nuclei changes and how the occupation of specific nucleonic orbits affects the interplay of residual interactions and configuration mixing.  The computed expectation values and transition likelihoods 
-can be directly linked to experiment, with the potential to single out new phenomena and guide future experiments. 
-Large-scale shell-model calculations represent also 
-challenging computational and theoretical topics, spanning from efficient usage of high-performance computing facilities  to consistent theories for deriving effective Hamiltonians and operators. 
-Alltogether, these various facets of nuclear theory represent important elements in our endeavors to understand nuclei and their limits of stability.  
-The goal and motivation of this course was to introduce and
-develop the nuclear structure tools  needed to carry out forefront research using the shell model as the central tool. The various exercises and project focussed on the development of a shell-model code for simpler systems like $sd$-shell nuclei, giving the participants the essential ideas of configuration interaction methods. During the first two weeks the aim was to develop such a shell-model code. With these insights, the students could divert into several directions
-the last week, from the usage of the NushellX suite of nuclear structure programs to further developing 
-their own shell-model program. After completion, it is our sytong feeling that the participants have understood the overarching ideas 
-behind central theoretical tools used to analyse nuclear structure experiments.
-
 
 \subsection{Aims and outcomes}
 
@@ -96,203 +85,152 @@ This can be summarized in
 \subsection{Aims and Learning Outcomes}
 At the end of the course, our ideal was that the students should have a basic understanding of
 \begin{itemize}
-\item Configuration interaction methods (nuclear shell-model here) as a central tool to interpret nuclear structure experiment
+\item 
 
-\item Have an understanding of single-particle basis functions and the construction of many-body basis states built thereupon. Examples are basis states from a Woods-Saxon potential, harmonic oscillator states and mean-field based states from a Hartree-Fock calculation. The single-particle basis states are orthonormal and are used to construct  a corresponding orthonormal basis set of Slater determinants.
-
-\item Develop an understanding of what defines an observable. 
-
-\item Understand how theory  can be used to interpret experimental quantities (separation energies and shell gaps for example).
-
-\item Understand how experiment is used to extract transition probabilities and information about ground and exited states. 
-
-\item Understand how second-quantization is used to represent states and compute expectation values and transition probabilities  of operators
-
-\item Understand how the Hamiltonian matrix is constructed from this orthonormal basis set of many-body states (linear expansion of Slater determinants)
-
-\item For nuclear systems like the $sd$-shell, essentially all nuclei can be studied using direct diagonalization methods. In the construction of the shell-model code during the first two weeks, the students should learn to compute  the ground state and the excited states of selected $sd$-shell nuclei. This project applies to all students. During the last week, students can pursue more individually defined projects
-
-\item The students will also learn to understand the basic elements of effective shell-model Hamiltonians and how to interpret the calculated properties in terms of various components of the nuclear forces (spin-orbit force, tensor force, central force etc). We provided the students with the necessary tools to perform such analyses. 
-
-\item Understand how to use shell-model calculations to calculate decay rates and transition probabilities and relate these to various electromagnetic transition operators and operators for beta-decays and double-beta decays.  
-
-\item Develop a critical understanding the limits of shell-model studies and how these can be related to interpretations of data such as results from in-beam and decay experiments.
-
-\item Understand how to use second-quantization to construct one-body and two-body transfer operators, overlap functions, spectroscopic factors and experiments related to spectroscopic factors. 
-
-\item For the students which wish to follow a more computational path during the last week, iterative eigenvalue solvers will discussed. Similarly, efficient representations of many-body states and computations of Hamiltonian matrices were also be discussed.
-
-\item We will also discuss modern shell-model codes like NushellX. This suite of programs can be used by students to pursue their own projects. Applications of NushellX to the calculations of various observables were discussed.
 \end{itemize}
 
-Based on the feedback from the students, see the end of the report, we feel these learning outcomes were achieved to a large extent. All groups developed their own shell-model code and benchmarked it with results from NushellX for $sd$-shell nuclei. Furthermore, NushellX was used to perform advanced interpretations of experimental data, allowing thereby the participants to both understand the basic theory (and later if of interest develop their own advanced nuclear structure tools) and to relate theory to experimental data from various decay modes.
 
 All in all, for both teachers and students, we believe most of our goals were achieved. 
 
 \subsection{Course Schedule}
-  
-Lectures were approximately 45 min each with a small break between each lecture. 
-The acronyms are 
-\begin{itemize}
-\item AG: Alexandra Gade
 
-\item BAB: Alex Brown
+\begin{longtable}{p{3cm} p{3cm} p{8cm} p{3cm}}
+\caption{DTP/TALENT Program Schedule (Weeks 1--3)}
+\label{tab:talent_schedule_plain}\\
+\toprule
+Week / Date & Time & Topic & Lecturer(s) \\
+\midrule
+\endfirsthead
 
-\item GJ: Gustav Jansen
+\toprule
+Week / Date & Time & Topic & Lecturer(s) \\
+\midrule
+\endhead
 
-\item MHJ: Morten Hjorth-Jensen
+\midrule
+\multicolumn{4}{r}{\emph{Continued on next page}} \\
+\endfoot
 
-\item RG: Robert Grzywacz
-\end{itemize}
-The final schedule is listed here. 
-\noindent
-\paragraph{Week 1, July 3-7.}
-\begin{footnotesize}
-\begin{quote}
-\begin{tabular}{llll}
-\hline
-\multicolumn{1}{c}{ Day } & \multicolumn{1}{c}{  } & \multicolumn{1}{c}{ Lecture Topics and lecturer } & \multicolumn{1}{c}{ Projects and exercises } \\
-\hline
-Monday 3    & 9am-930am     & Registration at the ECT                                             &                                                                  \\
-            & 930am-10am    & Introduction and welcome (BAB, MHJ and GJ)                          &                                                                  \\
-            & 10am-1230pm   & Survey of data (BAB)                                                & Intro to NushellX (BAB)                                          \\
-            & 1230pm-230pm  & Lunch +own activities                                               &                                                                  \\
-            & 230pm-6pm     & More survey of data (BAB)                                           & NushellX hands-on and discussion of project (MHJ)                \\
-\hline
-Tuesday 4   & 930am-1130pm  & Mean-field and shell-model basics (MHJ)                             & Discussion of simple shell-model project \\
-            & 1130am-1230pm & Single-particle potentials and shell-model basics (BAB)             &                                                                  \\
-            & 1230pm-230pm  & Lunch+ own activities                                               &                                                                  \\
-            & 230pm-6pm     & Single-particle potentials                                          & Studies of separation energies, shell gaps etc                   \\
-\hline
-Wednesday 5 & 930am-1130am  & Welcome by ECT director Jochen Wambach and Shell-model basics (MHJ) & Discussion of simple shell-model project                         \\
-            & 1130am-1230pm & Shell-model dimensionalities (BAB)                                  &                                                                  \\
-            & 1230pm-230pm  & Lunch+ own activities                                               &                                                                  \\
-            & 230pm-6pm     &                                                                     & Work on shell-model project and NushellX                         \\
-\hline
-Thursday 6  & 930am-1130am  & Shell-model basics (MHJ)                                            & Discussion of simple shell-model project                         \\
-            & 1130am-1230pm & Proton-neutron formalism and isospin (BAB)                          &                                                                  \\
-            & 1230pm-230pm  & Lunch+ own activities                                               &                                                                  \\
-            & 230pm-6pm     &                                                                     & Work on shell-model project and NushellX                         \\
-\hline
-Friday 7    & 930am-1230pm  & Effective interactions for shell model (GJ)                         &                                                                  \\
-            & 1230pm-230pm  & Lunch+ own activities                                               &                                                                  \\
-            & 230pm-5pm     &                                                                     & Group presentations   \\
-\hline
-\end{tabular}
-\end{quote}
-\end{footnotesize}
-\noindent
+\bottomrule
+\endlastfoot
 
-\paragraph{Week 2, July 10-14.}
-\begin{footnotesize}
-\begin{quote}
-\begin{tabular}{llll}
-\hline
-\multicolumn{1}{c}{ Day } & \multicolumn{1}{c}{  } & \multicolumn{1}{c}{ Lecture Topics and lecturer } & \multicolumn{1}{c}{ Projects and exercises } \\
-\hline
-Monday 10    & 930am-1030am  & Masses from experiment  (AG)                                                                          &                                                                \\
-             & 1030am-1230pm & Effective Hamiltonians (BAB and GJ)                                                                   &                                                                \\
-             & 1230pm-230pm  & Lunch +own activities                                                                                 &                                                                \\
-             & 230pm-6pm     &                                                                                                       & Work on shell-model project and NushellX                       \\
-\hline
-Tuesday 11   & 930am-1030am  & Spectroscopic factors from experiment (AG)                                                            &                                                                \\
-             & 1030am-1230pm & Spectroscopic factors from theory (BAB)                                                               &                                                                \\
-             & 1230pm-230pm  & Lunch+ own activities                                                                                 &                                                                \\
-             & 230pm-330pm   & Monte Carlo Shell-model seminar by Takaharu Otsuka                                                    &                                                                \\
-             & 330pm-6pm     &                                                                                                       & Work on shell-model project and NushellX                       \\
-\hline
-Wednesday 12 & 930am-1130am  & Introduction to $\beta$-decay, experiment (RG)                                                        &                                                                \\
-             & 1130am-1230pm & $\beta$-decay and sum rules from theory (BAB)                                                         &                                                                \\
-             & 1230pm-230pm  & Lunch+ own activities                                                                                 &                                                                \\
-             & 230pm-330pm   & Discussion of IBM and shell-model by Noam, Tobias and Takaharu                                        &                                                                \\
-             & 330pm-6pm     &                                                                                                       & Work on shell-model project and NushellX                       \\
-\hline
-Thursday 13  & 930am-1030am  & Electromagnetic decays from experiment (AG)                                                           &                                                                \\
-             & 1030am-1230pm & Shell-model transition probabilities (BAB)                                                            &                                                                \\
-             & 1230pm-230pm  & Lunch+ own activities                                                                                 &                                                                \\
-             & 230pm-330pm   & Presentation by Guillaume                                                                             &                                                                \\
-             & 330pm-6pm     &                                                                                                       & Work on shell-model project and NushellX                       \\
-\hline
-Friday 14    & 930am-11am    & Advanced aspects of  $\beta$-decay, experiment (RG)                                                   &                                                                \\
-             & 11am-1230pm   & Summary of first two weeks  (MHJ) &                                                                \\
-             & 1230pm-230pm  & Lunch+ own activities                                                                                 &                                                                \\
-             & 230pm-5pm     &                                                                                                       & Group presentations \\
-\hline
-\end{tabular}
-\end{quote}
-\end{footnotesize}
-\noindent
+% =========================
+% WEEK 1
+% =========================
+Week 1 -- Mon Jun 16 & 08:00--09:00 & Registration &  \\
+& 09:00--09:15 & Welcome by ECT* director Bira van Kolck &  \\
+& 09:15--10:00 & Basic elements of quantum computing and review of quantum mechanics
+(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune16/Firstlecture.ipynb}{Lecture material}) & Morten \\
+& 10:00--10:15 & Break &  \\
+& 10:15--11:00 & Qubits, density matrices, and entanglement
+(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune16/Secondlecture.ipynb}{Lecture material}) & Morten \\
+& 11:00--11:30 & Coffee break &  \\
+& 11:30--12:15 & Quantum gates and quantum circuits
+(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune16/Thirdlecture.ipynb}{Lecture material}) & Morten \\
+& 12:15--14:30 & Lunch &  \\
+& 14:30--18:00 & Exercises on Qiskit, gates, measurements, teleportation, T-injection (advanced)
+(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises}{Exercises}) &  \\
 
-\paragraph{Week 3, July 17-21.}
+Week 1 -- Tue Jun 17 & 09:15--10:00 & Review and introduction to quantum simulations
+(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune17/Firstlecture.ipynb}{Lecture material}) & Morten \\
+& 10:00--10:15 & Break &  \\
+& 10:15--11:00 & Measuring observables, Hadamard test, non-unitary gates
+(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune17/slides_tuesday_second_and_third.pdf}{Lecture material}) & Alessandro \\
+& 11:00--11:30 & Coffee break &  \\
+& 11:30--12:15 & Hamiltonian dynamics methods
+(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune17/slides_tuesday_second_and_third.pdf}{Lecture material}) & Alessandro \\
+& 12:15--14:30 & Lunch &  \\
+& 15:30--17:00 & Seminar: Quantum Computing at NVIDIA
+(\href{https://developer.nvidia.com/blog/author/jlietz/}{Justin Lietz}) &  \\
+& 14:30--15:30, 17:00--18:00 & Exercises: time evolution, observables, Hadamard test
+(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises}{Exercises}) &  \\
 
-\begin{footnotesize}
-\begin{quote}
-\begin{tabular}{llll}
-\hline
-\multicolumn{1}{c}{ Day } & \multicolumn{1}{c}{  } & \multicolumn{1}{c}{ Lecture Topics and lecturer } & \multicolumn{1}{c}{ Projects and exercises } \\
-\hline
-Monday 17    & 930am-12pm   & Building a shell-model code (MHJ)                                                                              &                                                                \\
-             & 12pm-1pm     & More on $\beta$-decay and $\gamma$ decay  (BAB)                                                                &                                                                \\
-             & 1pm-230pm    & Lunch +own activities                                                                                          &                                                                \\
-             & 230pm-6pm    &                                                                                                                & Work on shell-model project and NushellX                       \\
-\hline
-Tuesday 18   & 930am-12pm   & Building a shell-model code, Lanczos' algorithm and Hartree-Fock theory (MHJ)                                  &                                                                \\
-             & 12pm-1pm     & $\gamma$ decay  (BAB)                                                                                          &                                                                \\
-             & 1pm-230pm    & Lunch+ own activities                                                                                          &                                                                \\
-             & 230pm-330pm  & Laser spectroscopy talk by Agi and Shane                                                                       &                                                                \\
-             & 330pm-6pm    &                                                                                                                & Work on shell-model project and NushellX                       \\
-\hline
-Wednesday 19 & 930am-12pm   & From Hartree-Fock theory to the shell-model, analyzing the results (MHJ)                                       &                                                                \\
-             & 12pm-1pm     & $\gamma$ decay Two-body transition operators and double-beta decay (BAB)                                       &                                                                \\
-             & 1pm-230pm    & Lunch+ own activities                                                                                          &                                                                \\
-             & 230pm-330pm  & No-core shell-model talk by Patrick  and Nuclear interactions by Tor                                           &                                                                \\
-             & 330pm-6pm    &                                                                                                                & Work on shell-model project and NushellX                       \\
-\hline
-Thursday 20  & 930am-1230pm & From Hartree-Fock theory to the shell model, discussion of final project  and summmary of course (BAB and MHJ) &                                                                \\
-             & 1230pm-230pm & Lunch+ own activities                                                                                          &                                                                \\
-             & 230pm-5pm    &                                                                                                                & Group presentations \\
-\hline
-Friday 21    & 930am1230pm  & Project work and own activities (no lectures)                                                                  &                                                                \\
-             & 1230pm-230pm & Lunch+ own activities                                                                                          &                                                                \\
-             & 230pm-6pm    & Own activities                                                                                                 &                                                                \\
-\hline
-\end{tabular}
-\end{quote}
-\end{footnotesize}
+Week 1 -- Wed Jun 18 & 09:15--12:15 & Hamiltonian formulation of lattice gauge theories I--III
+(\href{https://drive.google.com/file/d/1cxXbFsvM0VmpCPmC0dEwOSxOk6ut2LMq/view}{Lecture material}) & Zohreh \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & Exercises: lattice Schwinger model
+(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises}{Exercises}) &  \\
+
+Week 1 -- Thu Jun 19 & 09:15--12:15 & Quantum computation of gauge theory time evolution I--III
+(\href{https://drive.google.com/file/d/1pCn-q7zwCfVOBq-YJsgTK0Wx_1GWgzo0/view}{Lecture material}) & Zohreh \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & Exercises
+(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises}{Exercises}) &  \\
+
+Week 1 -- Fri Jun 20 & 09:15--12:15 & Quantum computation of lattice gauge theories IV--V and perspectives
+(\href{https://drive.google.com/file/d/1pCn-q7zwCfVOBq-YJsgTK0Wx_1GWgzo0/view}{Lecture material}) & Zohreh \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & Exercises & Chung-Chun Hsieh \\
 
 
+  % =========================
+  % WEEK 2
+  % =========================
+  Week 2 -- Mon Jun 23 & 09:15--12:15 & Variational Quantum Eigensolver (VQE) I--III
+  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune23/}{Lecture material}) & Morten \\
+  & 12:15--14:00 & Lunch &  \\
+  & 14:00--17:00 & VQE Exercises &  \\
 
-\subsection{Teachers and organizers}
+  Week 2 -- Tue Jun 24 & 09:15--12:15 & Nuclear Hamiltonians, Jordan--Wigner, Trotter evolution, observables
+  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune24/}{Lecture material}) & Alexei, Ryan \\
+  & 14:00--15:00 & Exercise: Implement Trotter evolution
+  (\href{https://colab.research.google.com/drive/1SrJPAON0dgBfNSVbiYclZUdYb10Ptx4p}{Colab}) &  \\
+  & 15:00--16:00 & Seminar: Quantum Technologies in Trento
+  (\href{https://sd.fbk.eu/en/people/detail/federica-mantegazzini/}{Federica Mantegazzini}) &  \\
+  & 16:00--17:00 & Exercises &  \\
 
+  Week 2 -- Wed Jun 25 & 09:15--12:15 & Quantum Fourier Transform and Quantum Phase Estimation I--II
+  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/WednesdayJune25/}{Lecture material}) & Alexei, Ryan \\
+  & 12:15--14:00 & Lunch &  \\
+  & 14:00--17:00 & Exercise on QPE
+  (\href{https://colab.research.google.com/drive/16cgf3gOcz0Q6JRJzcIqhFZXh-17mscmM}{Colab}) &  \\
 
-The organizers were
+  Week 2 -- Thu Jun 26 & -- & ECT* closed (Feste Vigiliane) &  \\
 
-\begin{enumerate}
-\item \href{{https://people.nscl.msu.edu/~brown/}}{Alex Brown}, \href{{http://www.nscl.msu.edu/}}{National Superconducting Cyclotron Laboratory} and \href{{https://www.pa.msu.edu/}}{Department of Physics and Astronomy}, \href{{http://www.msu.edu/}}{Michigan State University}, East Lansing, MI 48824, USA
+  Week 2 -- Fri Jun 27 & 09:15--12:15 & Quantum channels and errors; error mitigation; state preparation for the Schwinger model
+  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/FridayJune27/}{Lecture material}) & Ryan, Alexei \\
+  & 12:15--14:00 & Lunch &  \\
+  & 14:00--17:00 & Exercise on ZNE
+  (\href{https://colab.research.google.com/drive/1oMrqgKfs_g_K8jGAvA9c0O7vuIVUDzZ9}{Colab}) &  \\
 
-\item \href{{http://mhjgit.github.io/info/doc/web/}}{Morten Hjorth-Jensen}, \href{{http://www.nscl.msu.edu/}}{National Superconducting Cyclotron Laboratory} and \href{{https://www.pa.msu.edu/}}{Department of Physics and Astronomy}, \href{{http://www.msu.edu/}}{Michigan State University}, East Lansing, MI 48824, USA and Department of Physics, University of Oslo, N-0316 Oslo, Norway 
-\end{enumerate}
+  % =========================
+  % WEEK 3
+  % =========================
+  Week 3 -- Mon Jun 30 & 09:15--12:15 & Rodeo algorithm, adiabatic state preparation, nuclear physics applications I--III
+  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune30/}{Lecture material}) & Dean \\
+  & 12:15--14:00 & Lunch &  \\
+  & 14:00--17:00 & Project work &  \\
 
-\noindent
-Morten Hjorth-Jensen will also function as student advisor and coordinator.
+  Week 3 -- Tue Jul 1 & 09:15--12:15 & Rodeo algorithm IV--VI
+  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJuly1/}{Lecture material}) & Dean \\
+  & 12:15--14:00 & Lunch &  \\
+  & 14:00--17:00 & Project work &  \\
 
-The teachers were
+  Week 3 -- Wed Jul 2 & 09:15--12:15 & Modern techniques (LCU, QSP, QDRIFT) I--III
+  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/WednesdayJuly2/}{Lecture material}) & Alessandro \\
+  & 12:15--14:00 & Lunch &  \\
+  & 14:00--17:00 & Project work &  \\
 
-\begin{enumerate}
-\item \href{{https://people.nscl.msu.edu/~brown/}}{Alex Brown}, \href{{http://www.nscl.msu.edu/}}{National Superconducting Cyclotron Laboratory} and \href{{https://www.pa.msu.edu/}}{Department of Physics and Astronomy}, \href{{http://www.msu.edu/}}{Michigan State University}, East Lansing, MI 48824, USA
+  Week 3 -- Thu Jul 3 & 09:15--11:00 & Quantum error correction I--II
+  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/ThursdayJuly3/}{Lecture material}) & Alessandro \\
+  & 11:00--11:30 & Coffee break &  \\
+  & 11:30--12:15 & Discussion of projects and summary of course &  \\
+  & 12:15--14:00 & Lunch &  \\
+  & 14:00--17:00 & Project work &  \\
 
-\item \href{{https://people.nscl.msu.edu/~gade/}}{Alexandra Gade}  \href{{http://www.nscl.msu.edu/}}{National Superconducting Cyclotron Laboratory} and \href{{https://www.pa.msu.edu/}}{Department of Physics and Astronomy}, \href{{http://www.msu.edu/}}{Michigan State University}, East Lansing, MI 48824, USA
+  Week 3 -- Fri Jul 4 & 09:15--10:00 & Discussion and work on projects &  \\
+  & 10:00--10:15 & Break &  \\
+  & 10:15--11:00 & Discussion and work on projects &  \\
+  & 11:00--11:30 & Coffee break &  \\
+  & 11:30--12:15 & Discussion and work on projects &  \\
+  & 12:15--14:00 & Lunch &  \\
+  & 14:00--17:00 & Project work and end of TALENT course &  \\
 
-\item \href{{http://web.utk.edu/~rgrzywac/}}{Robert Grzywacz}  at \href{{http://www.ornl.gov/}}{Oak Ridge National Laboratory}, Oak Ridge, TN 37831  and \href{{https://www.phys.utk.edu/}}{Department of Physics and Astronomy}, \href{{http://www.utk.edu/}}{University of Tennessee}, Knoxville, TN 37996-1200, USA
-
-\item \href{{http://mhjgit.github.io/info/doc/web/}}{Morten Hjorth-Jensen}  at \href{{http://www.nscl.msu.edu/}}{National Superconducting Cyclotron Laboratory} and \href{{https://www.pa.msu.edu/}}{Department of Physics and Astronomy}, \href{{http://www.msu.edu/}}{Michigan State University}, East Lansing, MI 48824, USA and  Department of Physics, University of Oslo, N-0316 Oslo, Norway
-
-\item \href{{https://www.ornl.gov/staff-profile/gustav-r-jansen}}{Gustav Jansen}  at \href{{http://www.ornl.gov/}}{Oak Ridge National Laboratory}, Oak Ridge, TN 37831, USA
-
-\end{enumerate}
+  \end{longtable}
 
 
 \subsection{Budget}
+
 The teachers were mostly self-sponsored, with Gade, Brown, Grzywacz and Jansen being supported by the FRIB theory alliance, Oak Ridge National Laboratory and the University of Oslo. The housing of Gade and Jansen was supported by the ECT* since they were participants of a workshop which was held during the second week of the Talent course. The ECT* covered lunches for all teachers during weekdays. Hjorth-Jensen was fully self-supported (except for lunches from the ECT*). Furthermore, Jansen's travel was piad by the University of Oslo. 
 
 The ECT* covered the local expenses (housing and food) for 19 students, totaling 19000 Euros. Of the 31 students, three students came from the University of Trento or were residents of Trento and received only lunches from the ECT*. The remaining nine students were self-supported, but lunches during the weekdays were provided by the ECT*. 
@@ -311,6 +249,7 @@ three full weeks of administrative help from one person.
 
 
 \subsection{Participants with their home institutions and nationalities}
+
 The target group for the Nuclear Talent courses is Master of Science students, PhD students and early post-doctoral fellows.
 Out of 52 applicants, 31 students were selected. Priority was given
 to Master of Science students and early PhD students. 
@@ -327,36 +266,7 @@ The students and their respective institutions are listed in the table below.
     \begin{tabular}{|c||l|l|l|l|}
      Name & Level &Institution &Nationality & Theory/Expt  \\\hline
      Ashley Hood(F)& PhD &Lousiana State University, USA  &USA & Expt\\
-     Erin Good(F)& PhD & Lousiana State University, USA &USA & Expt \\
-     Anne Marie Forney(F)&PhD  &University of Maryland, USA  &USA & Expt\\
-     Patrick Fasano(M)& PhD & Notre Dame University, USA &USA & Theory \\
-     Guillaime H\"{a}fner(M)& MSc & University of Cologne, Germany &Germany & Expt \\
-     Udo Gayer(M)& PhD & TU Darmstadt, Germany & Germany & Expt \\
-     Rosa-Belle Gerst(F)& PhD & University of Cologne, Germany & Germany &Expt\\
-     Tobias Beck(M)& PhD & TU Darmstadt, Germany &Germany &Expt\\
-     Paolo Andreatta(M)& PhD & University of Trento, Italy  &Italy& Theory \\
-     Luca Riz(M)& PhD & University of Trento, Italy &Italy & Theory \\
-     Giovanni Pederiva(M)& MSc & University of Oslo, Norway  &Italy &Theory \\
-     Gianluca Salvioni(M)& PhD &University of Jyv\"askyl\"a, Finland  &Italy& Theory   \\
-     David Miur(M)& PhD & University of York, UK  &UK & Theory\\
-     Matthew Shelley(M)& MSc &University of York, UK &UK & Theory \\
-     Shane Wilkins(M)& PhD & University of Manchester, UK  &UK & Expt \\
-     Ina Berentsen(F)& MSc & University of Oslo, Norway &Norway & Expt \\
-     Mathias Vege(M)& MSc & University of Oslo, Norway &Norway& Theory \\
-     Sean Miller(M)&MSc  &University of Oslo, Norway  &Norway& Theory \\
-     Tor Dj\"{a}rv(M)&PhD  &Chalmers  &Sweden & Theory \\
-     Martin Albertsson(M) &PhD  &Lund University, Sweden  &Sweden & Theory \\
-     Lucia Campo Crespo(F)& PhD & University of Oslo, Norway  &Spain & Expt\\
-     Antonio Marquez Romero(M)&PhD  &University of York, UK  &Spain & Theory \\
-     Gilho Ahn(M) & MSc & University of Athens, Greece & Greece & Theory \\
-     Ovidiu Nitescu(M) & MSc & University of Bucuresti, Romania & Romania & Theory \\
-     Noam Gavrielov(M) & PhD & The Hebrew University, Jerusalem, Israel & Israel & Theory \\
-     Olvier Vasseur(M) & PhD & IPN Orsay, Paris, France & France & Theory \\
-     Liqiang Qi(M) & PhD & IPN Orsay, Paris, France & China & Expt \\
-     Mahsa Razazi(F) & PhD & Islamic Azad University, Urmia, Iran & Iran & Theory \\
-     Masaaki Tokiada(M) & PhD & University of, Japan & Japan & Theory \\
-     Agota Kozsorus(F) & PhD & University of Leuven, Belgium & Hungary & Expt \\
-     Tiia Haaverinen(F)& PhD &University of Jyv\"askyl\"a, Finland  &Finland & Theory   \\ \hline
+
     \end{tabular}
   \end{ruledtabular}
 \end{table} 
@@ -367,14 +277,34 @@ On average, the students performed very well. It was an excellent  and very acti
 
 \section{Brief summary}
 
-The support from the ECT*, and its year-long experiences with running doctoral training programs and Talent courses, was central to the success of the course. Of uttermost importance was Serena Degli Avancini's help will all administrative matters, from housing to minor practicalities.  Without her help and the other staff of the ECT*, and the director's (Prof.~Jochen Wambach) 
-enthusiastic support,  it is unlikely that this course would have run as smoothly as it did. 
+The support from the ECT*, and its year-long experiences with running
+doctoral training programs and Talent courses, was central to the
+success of the course. Of uttermost importance was Serena Degli
+Avancini's help will all administrative matters, from housing to minor
+practicalities.  Without her help and the other staff of the ECT*, and
+the director's (Prof.~Jochen Wambach) enthusiastic support, it is
+unlikely that this course would have run as smoothly as it did.
 
-As a recommendation  to new teaching teams, setting student groups from day one is essential. Groups of 3-4 students were optimal and students with complementary and/or different skills interest did benefit from each other. This group of students was particularly well functioning and setting up working gropus from the very beginning helped in developing new friendships and perhaps even new collaborations. The feedback from the students really testifies to this.
+As a recommendation to new teaching teams, setting student groups from
+day one is essential. Groups of 3-4 students were optimal and students
+with complementary and/or different skills interest did benefit from
+each other. This group of students was particularly well functioning
+and setting up working gropus from the very beginning helped in
+developing new friendships and perhaps even new collaborations. The
+feedback from the students really testifies to this.
 
-Else, having proper projects and exercises which are coordinated with the lectures is essential. The learning outcomes and the feeling of having written one's own shell-model code cannot be underestimated.
+Else, having proper projects and exercises which are coordinated with
+the lectures is essential. The learning outcomes and the feeling of
+having written one's own shell-model code cannot be underestimated.
 
-With several  teachers it is also difficult to achieve a uniform teaching style. And some of the lectures were best suited in terms of slides. Other teachers used a mix of slides and blackboard, or just the blackboard. The latter slows down the pace and many of the respondents seemed to prefer that teaching modus. But with several teachers, it is also important that each teacher feels comfortable with her/his way of teaching, especially since this was an intensive three weeks course.
+With several teachers it is also difficult to achieve a uniform
+teaching style. And some of the lectures were best suited in terms of
+slides. Other teachers used a mix of slides and blackboard, or just
+the blackboard. The latter slows down the pace and many of the
+respondents seemed to prefer that teaching modus. But with several
+teachers, it is also important that each teacher feels comfortable
+with her/his way of teaching, especially since this was an intensive
+three weeks course.
 
 Overall, we as teaching feel the original learning outcomes and goals were met. It was a marvelous group of students to teach. 
 \noindent\bigskip
