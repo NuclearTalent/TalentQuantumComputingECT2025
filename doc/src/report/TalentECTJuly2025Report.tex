@@ -1,395 +1,39 @@
-\documentclass[prc,amsart,english]{revtex4}
+\documentclass[prc,amsart,english]{revtex4-2}
 \usepackage{graphicx}
 \usepackage{epsfig}
 \usepackage{bm}
 \usepackage{color}
+\usepackage{xcolor}
 \usepackage{float}
 \usepackage{dcolumn}
 \usepackage{multirow} 
-\usepackage{hyperref}
-\usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{hyperref}
 
+
+
+
 \usepackage[T1]{fontenc}       % DC-fonts
 \begin{document}
-\title{Nuclear Talent Course on Nuclear Theory for Nuclear Structure Experiments, ECT*, July 3-21, 2017}
+\title{Nuclear Talent Course on Quantum Computing for Nuclear Physics, ECT*, June 16- July 4, 2025}
 \maketitle
 
-\includegraphics[width=0.9\columnwidth]{fig1.jpg}
+\includegraphics[width=1.0\columnwidth]{figures/fig2025.jpg}
 
-\clearpage
 
-The present document aims at giving a summary, 
-with background information as well, of  the twelfth Nuclear Talent course, {\em Nuclear Theory for Nuclear Structure Experiments}.
-The course was held at the premises of the European Center for Theoretical Studies
-in Nuclear Physics and Related Areas (ECT*), Trento, Italy during the period July 3 to July 21, 2017. 
 
-This was the fourth course which has been held at the ECT*, the first one in 2012, then 2014 and 2015 and finally this one in 2017. The support from the ECT* has simply been crucial for the successful arrangement and running of these courses. In total 52 applications were received and a final of 31 participants were selected. Five teachers were involved, with two of them being the organizers. 
+
 
 
 \section{Report }
 
-\subsection{Introduction}
-
-\subsection{Aims and outcomes}
-
-We held approximately forty-five hours of lectures over three weeks and a
-comparable amount of practical computer and exercise sessions, including the
-setting of individual problems and the organization of exercises and projects.
-
-The mornings consisted of lectures and the
-afternoons was  devoted to exercises and project work meant to shed light on the exposed theory, 
-the computational project  and eventual individual student projects.
-
-The total load is approximately 170 hours, corresponding to  {\bf 7 ECTS} in Europe.
-The days were organized as follows: 9.30-13 lectures, time for exercises with assistance (including lunch)
-till 18-19 (3-4 hours of allocated exercise sessions per day).
-The course was held at the premises ECT* (Villazzano) in Trento, Italy, from
-July 3  to July 21 in 2017.
-Professor Takaharu Otsuka gave a special lecture on Shell-Model Monte Carlo methods in the second week and 
-in addition, five students gave presentations of their own research. These lectures were closely related to the topics of the present Talent course.  
-
-
-
-All learning material, with preparatory material on second quantization plus Alex Brown's lecture notes were provided well in advance before the school (three weeks) and available via the Github link \href{https://github.com/NuclearTalent/NuclearStructure}. 
-
-The students were divided into nine groups from the very first day of the school. These groups remained stable throughout the whole duration of the course. Their basic set up 
-consisted in having at least one experimentalist and one theorist in every group. Three groups had four members  while the remaining six groups consisted of three members only. 
-This can be summarized in
-\begin{itemize}
-\item We  used group work to carry out the tasks.
-
-\item Groups where carefully put together to maximize diversity of backgrounds.  
-
-\item The weekly results and progress of every group was presented at the end of week (Friday afternoon) in a conference-like setting to create accountability.  
-
-\item We several organized events (weekly social dinners as well) where individuals and groups exchange their experiences, difficulties and successes to foster interaction.  
-
-\item During the school, on-line and lecture-based training tailored to technical issues were provided. The participants learnt to use and interpret the results of computer-based and hand calculations of nuclear models. The lectures were aligned with the practical computational projects and exercises and the lecturers were always available to help students and work with them during the project and exercise sessions.  
-
-\item During the second week, after having introduced the basic theory needed to understand full configuration interaction  theory (the basis for shell-model studies), the theoretical interpretations were accompanied by talks on how to perform nuclear structure experiments. These lectures were given by Alexandra Gade and Robert Grzywacz and illustrated nicely how nuclear structure theory can be used  to interpret data. Several of the experimental students gave additional lectures the same week on additional experimental techniques. Overall, these lectures illustrated nicely, and were highly appreciated by the students, how tightly interwoven theory and experiment are.
-  
-\item There was enough flexibility and time to organize mini-lectures and discussion sessions on an ad-hoc basis.  
-
-\item Each group of students maintained an online logbook of their activities and results using Github. This allowed the teaching team to monitor the weekly progress of each group. The weekly presentations were also stored at the Github address of each group. Each group had to establish a Github address where all material was placed.  
-
-\item Training modules, codes, lectures, practical exercise instructions, online logbooks, instructions and information created by participants are stored  into a comprehensive website that is available to the community and the public for self-guided training or for use in various educational settings (for example, a graduate course at a university could assign some of the projects as homework or an extra credit project, etc). The website with all material is at \href{https://github.com/NuclearTalent/NuclearStructure}. 
-
-\item Seven students handed in their final reports and requested credits. 
-  
-\end{itemize}
-
-
-\subsection{Aims and Learning Outcomes}
-At the end of the course, our ideal was that the students should have a basic understanding of
-\begin{itemize}
-\item 
-
-\end{itemize}
-
-
-All in all, for both teachers and students, we believe most of our goals were achieved. 
-
-\subsection{Course Schedule}
-
-\begin{longtable}{p{3cm} p{3cm} p{8cm} p{3cm}}
-\caption{DTP/TALENT Program Schedule (Weeks 1--3)}
-\label{tab:talent_schedule_plain}\\
-\toprule
-Week / Date & Time & Topic & Lecturer(s) \\
-\midrule
-\endfirsthead
-
-\toprule
-Week / Date & Time & Topic & Lecturer(s) \\
-\midrule
-\endhead
-
-\midrule
-\multicolumn{4}{r}{\emph{Continued on next page}} \\
-\endfoot
-
-\bottomrule
-\endlastfoot
-
-% =========================
-% WEEK 1
-% =========================
-Week 1 -- Mon Jun 16 & 08:00--09:00 & Registration &  \\
-& 09:00--09:15 & Welcome by ECT* director Bira van Kolck &  \\
-& 09:15--10:00 & Basic elements of quantum computing and review of quantum mechanics
-(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune16/Firstlecture.ipynb}{Lecture material}) & Morten \\
-& 10:00--10:15 & Break &  \\
-& 10:15--11:00 & Qubits, density matrices, and entanglement
-(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune16/Secondlecture.ipynb}{Lecture material}) & Morten \\
-& 11:00--11:30 & Coffee break &  \\
-& 11:30--12:15 & Quantum gates and quantum circuits
-(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune16/Thirdlecture.ipynb}{Lecture material}) & Morten \\
-& 12:15--14:30 & Lunch &  \\
-& 14:30--18:00 & Exercises on Qiskit, gates, measurements, teleportation, T-injection (advanced)
-(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises}{Exercises}) &  \\
-
-Week 1 -- Tue Jun 17 & 09:15--10:00 & Review and introduction to quantum simulations
-(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune17/Firstlecture.ipynb}{Lecture material}) & Morten \\
-& 10:00--10:15 & Break &  \\
-& 10:15--11:00 & Measuring observables, Hadamard test, non-unitary gates
-(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune17/slides_tuesday_second_and_third.pdf}{Lecture material}) & Alessandro \\
-& 11:00--11:30 & Coffee break &  \\
-& 11:30--12:15 & Hamiltonian dynamics methods
-(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune17/slides_tuesday_second_and_third.pdf}{Lecture material}) & Alessandro \\
-& 12:15--14:30 & Lunch &  \\
-& 15:30--17:00 & Seminar: Quantum Computing at NVIDIA
-(\href{https://developer.nvidia.com/blog/author/jlietz/}{Justin Lietz}) &  \\
-& 14:30--15:30, 17:00--18:00 & Exercises: time evolution, observables, Hadamard test
-(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises}{Exercises}) &  \\
-
-Week 1 -- Wed Jun 18 & 09:15--12:15 & Hamiltonian formulation of lattice gauge theories I--III
-(\href{https://drive.google.com/file/d/1cxXbFsvM0VmpCPmC0dEwOSxOk6ut2LMq/view}{Lecture material}) & Zohreh \\
-& 12:15--14:00 & Lunch &  \\
-& 14:00--17:00 & Exercises: lattice Schwinger model
-(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises}{Exercises}) &  \\
-
-Week 1 -- Thu Jun 19 & 09:15--12:15 & Quantum computation of gauge theory time evolution I--III
-(\href{https://drive.google.com/file/d/1pCn-q7zwCfVOBq-YJsgTK0Wx_1GWgzo0/view}{Lecture material}) & Zohreh \\
-& 12:15--14:00 & Lunch &  \\
-& 14:00--17:00 & Exercises
-(\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises}{Exercises}) &  \\
-
-Week 1 -- Fri Jun 20 & 09:15--12:15 & Quantum computation of lattice gauge theories IV--V and perspectives
-(\href{https://drive.google.com/file/d/1pCn-q7zwCfVOBq-YJsgTK0Wx_1GWgzo0/view}{Lecture material}) & Zohreh \\
-& 12:15--14:00 & Lunch &  \\
-& 14:00--17:00 & Exercises & Chung-Chun Hsieh \\
-
-
-  % =========================
-  % WEEK 2
-  % =========================
-  Week 2 -- Mon Jun 23 & 09:15--12:15 & Variational Quantum Eigensolver (VQE) I--III
-  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune23/}{Lecture material}) & Morten \\
-  & 12:15--14:00 & Lunch &  \\
-  & 14:00--17:00 & VQE Exercises &  \\
-
-  Week 2 -- Tue Jun 24 & 09:15--12:15 & Nuclear Hamiltonians, Jordan--Wigner, Trotter evolution, observables
-  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune24/}{Lecture material}) & Alexei, Ryan \\
-  & 14:00--15:00 & Exercise: Implement Trotter evolution
-  (\href{https://colab.research.google.com/drive/1SrJPAON0dgBfNSVbiYclZUdYb10Ptx4p}{Colab}) &  \\
-  & 15:00--16:00 & Seminar: Quantum Technologies in Trento
-  (\href{https://sd.fbk.eu/en/people/detail/federica-mantegazzini/}{Federica Mantegazzini}) &  \\
-  & 16:00--17:00 & Exercises &  \\
-
-  Week 2 -- Wed Jun 25 & 09:15--12:15 & Quantum Fourier Transform and Quantum Phase Estimation I--II
-  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/WednesdayJune25/}{Lecture material}) & Alexei, Ryan \\
-  & 12:15--14:00 & Lunch &  \\
-  & 14:00--17:00 & Exercise on QPE
-  (\href{https://colab.research.google.com/drive/16cgf3gOcz0Q6JRJzcIqhFZXh-17mscmM}{Colab}) &  \\
-
-  Week 2 -- Thu Jun 26 & -- & ECT* closed (Feste Vigiliane) &  \\
-
-  Week 2 -- Fri Jun 27 & 09:15--12:15 & Quantum channels and errors; error mitigation; state preparation for the Schwinger model
-  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/FridayJune27/}{Lecture material}) & Ryan, Alexei \\
-  & 12:15--14:00 & Lunch &  \\
-  & 14:00--17:00 & Exercise on ZNE
-  (\href{https://colab.research.google.com/drive/1oMrqgKfs_g_K8jGAvA9c0O7vuIVUDzZ9}{Colab}) &  \\
-
-  % =========================
-  % WEEK 3
-  % =========================
-  Week 3 -- Mon Jun 30 & 09:15--12:15 & Rodeo algorithm, adiabatic state preparation, nuclear physics applications I--III
-  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune30/}{Lecture material}) & Dean \\
-  & 12:15--14:00 & Lunch &  \\
-  & 14:00--17:00 & Project work &  \\
-
-  Week 3 -- Tue Jul 1 & 09:15--12:15 & Rodeo algorithm IV--VI
-  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJuly1/}{Lecture material}) & Dean \\
-  & 12:15--14:00 & Lunch &  \\
-  & 14:00--17:00 & Project work &  \\
-
-  Week 3 -- Wed Jul 2 & 09:15--12:15 & Modern techniques (LCU, QSP, QDRIFT) I--III
-  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/WednesdayJuly2/}{Lecture material}) & Alessandro \\
-  & 12:15--14:00 & Lunch &  \\
-  & 14:00--17:00 & Project work &  \\
-
-  Week 3 -- Thu Jul 3 & 09:15--11:00 & Quantum error correction I--II
-  (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/ThursdayJuly3/}{Lecture material}) & Alessandro \\
-  & 11:00--11:30 & Coffee break &  \\
-  & 11:30--12:15 & Discussion of projects and summary of course &  \\
-  & 12:15--14:00 & Lunch &  \\
-  & 14:00--17:00 & Project work &  \\
-
-  Week 3 -- Fri Jul 4 & 09:15--10:00 & Discussion and work on projects &  \\
-  & 10:00--10:15 & Break &  \\
-  & 10:15--11:00 & Discussion and work on projects &  \\
-  & 11:00--11:30 & Coffee break &  \\
-  & 11:30--12:15 & Discussion and work on projects &  \\
-  & 12:15--14:00 & Lunch &  \\
-  & 14:00--17:00 & Project work and end of TALENT course &  \\
-
-  \end{longtable}
-
-
-\subsection{Budget}
-
-The teachers were mostly self-sponsored, with Gade, Brown, Grzywacz and Jansen being supported by the FRIB theory alliance, Oak Ridge National Laboratory and the University of Oslo. The housing of Gade and Jansen was supported by the ECT* since they were participants of a workshop which was held during the second week of the Talent course. The ECT* covered lunches for all teachers during weekdays. Hjorth-Jensen was fully self-supported (except for lunches from the ECT*). Furthermore, Jansen's travel was piad by the University of Oslo. 
-
-The ECT* covered the local expenses (housing and food) for 19 students, totaling 19000 Euros. Of the 31 students, three students came from the University of Trento or were residents of Trento and received only lunches from the ECT*. The remaining nine students were self-supported, but lunches during the weekdays were provided by the ECT*. 
-
-The ECT* provided support of a total of 19000 Euros, plus lunches for 15 days for 31 students and five teachers. 
-The estimated price per lunch is 10-15 Euros, totaling thus approximately 6000 Euros.
-The total direct contributions from the ECT*, including housing for Jansen and Gade as well as Otsuka,  amount thus approximately to at least 30000 Euros. This excludes usage of the premises of the ECT*, the fantastic administrative support from the ECT* (Serena is just amazing) and other running expenses. Here we would estimate these to amount to approximately  10000 Euros. We find it reasonable to assume that the total support received from the ECT*, direct and indirect expenses, amount to roughly 40000 Euros. 
-
-
-All travels were covered by the home institutions of the participants. If we assume on average an estimate of 1000 Euros per travel per participants, and that the teachers were essentially fully self-supported, plus nine fully self-supported expenses, it is fair to assume that the additional expenses amount to approximately $36\times 1000=36000$ Euros for travel, $9\times 1000=9000$ Euros for the self-supported students and approximately 10000 Euros to cover housing and additional living expenses for the teachers. In total, a realistic estimate of the
-budget is close to 90000-100000 Euros, with the ECT* sponsoring at least 40000 Euros. 
-
-This estimate reflects  (without an honorarium for the teachers) a realistic expenditure for a three week intensive course with 31 students.  Housing expenses will however vary from place to place. The ECT* has a long tradition in running doctoral schools and a good practice on finding reasonable housing for the participants. If administrative help is to be added to the budget, one needs at least to account for 
-three full weeks of administrative help from one person.
-
-
-
-\subsection{Participants with their home institutions and nationalities}
-
-The target group for the Nuclear Talent courses is Master of Science students, PhD students and early post-doctoral fellows.
-Out of 52 applicants, 31 students were selected. Priority was given
-to Master of Science students and early PhD students. 
-
-The students were expected to have operating programming skills in Fortran/C++/Python and knowledge of
-quantum mechanics at an intermediate level, with basic knowledge of 
-many-body physics. 
-Of the 31 students, eight were Master of Science students and all, if possible,  expressed they would like to continue with a PhD in nuclear physics. Of the PhD students, the majority
-were in their first two years. Sixteen nationalities (and three continents) and 20 different institutions/affiliations 
-were represented. Twelve out of the 31  students were experimentalists and nine were female students. 
-The students and their respective institutions are listed in the table below. 
-\begin{table}[hbtp]
-  \begin{ruledtabular}
-    \begin{tabular}{|c||l|l|l|l|}
-     Name & Level &Institution &Nationality & Theory/Expt  \\\hline
-     Ashley Hood(F)& PhD &Lousiana State University, USA  &USA & Expt\\
-
-    \end{tabular}
-  \end{ruledtabular}
-\end{table} 
-
-On average, the students performed very well. It was an excellent  and very active group. Seven students handed in the final report and will receive a credit transfer of the seven ECTS from the University of Trento.
-
-\clearpage
-
-\section{Brief summary}
-
-The support from the ECT*, and its year-long experiences with running
-doctoral training programs and Talent courses, was central to the
-success of the course. Of uttermost importance was Serena Degli
-Avancini's help will all administrative matters, from housing to minor
-practicalities.  Without her help and the other staff of the ECT*, and
-the director's (Prof.~Jochen Wambach) enthusiastic support, it is
-unlikely that this course would have run as smoothly as it did.
-
-As a recommendation to new teaching teams, setting student groups from
-day one is essential. Groups of 3-4 students were optimal and students
-with complementary and/or different skills interest did benefit from
-each other. This group of students was particularly well functioning
-and setting up working gropus from the very beginning helped in
-developing new friendships and perhaps even new collaborations. The
-feedback from the students really testifies to this.
-
-Else, having proper projects and exercises which are coordinated with
-the lectures is essential. The learning outcomes and the feeling of
-having written one's own shell-model code cannot be underestimated.
-
-With several teachers it is also difficult to achieve a uniform
-teaching style. And some of the lectures were best suited in terms of
-slides. Other teachers used a mix of slides and blackboard, or just
-the blackboard. The latter slows down the pace and many of the
-respondents seemed to prefer that teaching modus. But with several
-teachers, it is also important that each teacher feels comfortable
-with her/his way of teaching, especially since this was an intensive
-three weeks course.
-
-Overall, we as teaching feel the original learning outcomes and goals were met. It was a marvelous group of students to teach. 
-\noindent\bigskip
-\includegraphics[width=0.9\columnwidth]{fig2.jpg}
-\end{document}
-
-\documentclass[superscriptaddress,amsmath,amssymb,aps,floatfix]{revtex4-2}
-\usepackage{graphicx,tikz} 
-\usepackage[mode=buildmissing]{standalone} 
-\usepackage{dcolumn}
-\usepackage{bm}
-\usepackage{physics}
-\usepackage{siunitx}
-\usepackage{soul}
-\usepackage{comment}
-\usepackage[bb=boondox]{mathalfa}
-\usetikzlibrary{external}
-\tikzexternalize[prefix=figures/]
-\DeclareMathOperator{\sinc}{sinc}
-\newcommand{\may}[1]{\textcolor{orange}{#1}}
-\newcommand{\ale}[1]{{\color{blue}{\bf Ale}: #1}}
-\newcommand{\zd}[1]{{\color{purple}{\bf ZD}: #1}}
-\usepackage{xcolor}
-
-\begin{document}
-\title{Proposal for a Nuclear Talent course at the ECT* in 2025:\\Quantum Computing for Nuclear
-Physics}
-
-
-\author{Alexei Bazavov}
-
-\affiliation{Department of Computational Mathematics, Science and
-Engineering and Department of Physics and Astronomy, Michigan State
-University, East Lansing, MI 48824, USA}
-
-\author{Zohreh Davoudi}
-\affiliation{Department of Physics, University of Maryland, College Park,
-MD 20742, USA}
-\affiliation{Center for Quantum Information and Computer Science (QuICS), University of Maryland, College Park, MD 20742, USA}
-
-\author{Morten Hjorth-Jensen}
-\affiliation{Department of Physics and Center for Computing in Science Education, University of Oslo, N-0316 Oslo, Norway}
-\affiliation{Facility for Rare Isotope Beams and Department of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA}
-
-\author{Ryan LaRose}
-\affiliation{Department of
-Computational Mathematics, Science and Engineering, Michigan State
-University, East Lansing, MI 48824, USA}
-
-\author{Dean Lee}
-\affiliation{Facility for Rare Isotope Beams and Department of Physics and
-Astronomy, Michigan State University, East Lansing, MI 48824, USA}
-
-\author{Alessandro Roggero} 
-\affiliation{Department of Physics, University of Trento, Povo, 38123 Trento, Italy}
-    
-\maketitle
-
-\section{Proposal for a Nuclear Talent course at the ECT* in 2025}
-
-We would like to propose a three-week Nuclear Talent course on theory
-for exploring quantum computing and quantum information science
-applied to nuclear physics at the ECT* for the summer of 2025. We
-believe such a course has a strong potential to attract many students,
-theorists and experimentalists alike.
-
-Below we give a short motivation for the proposed course and the
-rationale behind the Nuclear Talent initiative. Thereafter we detail
-our course plans with learning outcomes, objectives and teaching
-philosophy, as well as various organizational and practical matters.
-
-The teaching teams consists of quantum computing theorists and nuclear
-theorists, with expertise ranging from many-body methods to quantum
-field theories. Several of us have developed courses on quantum
-computing and/or taught similar courses, in addition to our ongoing
-research on quantum computing. This spans from quantum engineering to
-developments of new algorithms and error correction studies. We
-believe such a mix is important as it gives the students a better
-understanding on how quantum computing can be applied to nuclear
-physics problems, and what are the limitations and possibilities in
-understanding and interpreting the various algorithms on present and
-planned quantum technologies.
-
-\subsection{Motivation}\label{motivation}
-
+The present document aims at giving a summary, 
+with background information as well, of  the Nuclear Talent Course on Quantum Computing for Nuclear Physics.
+The course was held at the premises of the European Center for Theoretical Studies
+in Nuclear Physics and Related Areas (ECT*), Trento, Italy during the period June 16 to July 4, 2025. 
+
+\subsection{Motivation behind the school}
 For nuclear theorists, the overarching challenge is to develop a
 comprehensive description of nuclei and their reactions, grounded in
 the fundamental interactions between the constituent nucleons with
@@ -422,241 +66,149 @@ developing quantum-computing algorithms applied to quantum many-body
 systems, with the hope to circumvent many of the classically
 intractable problems.
 
-This proposal for a Nuclear Talent school aims at bringing together
+This Nuclear Talent school aimed at bringing together
 the efforts of nuclear many-body theorists, quantum information
 theorists, and mathematicians in order to present and discuss
 algorithms for studying nuclear systems using recent progress in
 quantum information theory.
 
-\subsection{Introduction to the Talent Courses}
 
-The TALENT initiative, \href{http://www.nucleartalent.org}{Training in
-  Advanced Low Energy Nuclear Theory}, aims at providing an advanced
-and comprehensive training to graduate students and young researchers
-in low-energy nuclear theory. The initiative is a multinational
-network of several European and Northern American institutions and
-aims at developing a broad curriculum that will provide the necessary
-training in cutting-edge theory for understanding nuclei and nuclear
-reactions.  These objectives will be met by offering a series of
-lectures, delivered by experts in nuclear many-body theory and quantum
-information theories.  The educational material generated under this
-program will be collected in the form of WEB-based courses, textbooks,
-and a variety of modern educational resources. No such
-all-encompassing material is available at present; its development
-will allow dispersed university groups to profit from the best
-expertise available worldwide.
+\subsection{Structure of the school}
 
-The Nuclear Talent initiative has organized and run several advanced
-courses since the summer of 2012. Several of these courses have been run
-and organized (in a very successful way) at the premises of the
-ECT\emph{. We hope thus, if this course gets approved by the board of
-directors of the ECT}, that we can continue this successful and very
-fruitful collaboration.
-
-\section{Aims and Learning Outcomes}
-\subsection{Format}
-
-We propose approximately forty-five hours of lectures over three weeks
-and a comparable amount of practical computer and exercise sessions with
-supervised practices and tutorials.
-
-The mornings will consist of lectures and the afternoons will be devoted
-to exercises meant to shed light on the exposed theory, the
-computational projects, and individual student projects. These components
-will be coordinated to foster student engagement, maximize learning, and
-create lasting value for the students. For the benefit of the TALENT
-series and of the community, material (courses, slides, problems and
-solutions, reports on students' projects) will be made publicly
-available using version control software like \emph{git} and posted
-electronically on \href{https://github.com}{github}.
-
-As with previous TALENT courses, we envision the following features for
-the afternoon sessions: We will use both individual and group work to
-carry out tasks that are very specific in technical instructions, but
-leave freedom for creativity.
-
-\begin{itemize}
-\item
-  Groups will be carefully put together to maximize diversity of
-  backgrounds.
-\item
-  Results will be presented in a conference-like setting to create
-  accountability.
-\item
-  We will organize events where individuals and groups exchange their
-  experiences, difficulties, and successes to foster interaction.
-\item
-  During the school, on-line and lecture-based training tailored to
-  technical issues will be provided. Students will learn to use and
-  interpret the results of computer-based and hands-on calculations of
-  quantum computing algorithms. The lectures will be aligned with the
-  practical computational projects and exercises and the lecturers will
-  be available to help students and work with them during the exercise
-  sessions.
-\item
-  These interactions will raise topics not originally envisioned for the
-  course but which are recognized to be valuable for the students. There
-  will be flexibility to organize mini-lectures and discussion sessions
-  on an ad-hoc basis in such cases.
-
-\item
-  Training modules, codes, lectures, practical exercise instructions,
-  online logbooks, instructions and information created by participants
-  will be merged into a comprehensive website that will be available to
-  the community and the public for self-guided training or for use in
-  various educational settings (for example, a graduate course at a
-  university could assign some of the projects as homework or an extra
-  credit project, etc).
-\end{itemize}
+We held approximately forty hours of lectures over three weeks and a
+similar amount of practical exercise and project work sessions, including the
+development of individual problems and the organization of exercises and projects.
+The website with all educational material is at \href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025}. 
+The teachers of the school are planning to write, based on the material which was developed for the course, a Lecture Notes in Physics (Springer Verlag) monograph on \textit{Quantum Computing for Many-body Physics}. 
 
 
-\subsection{Course content, learning outcomes and detailed plan}
+The mornings consisted of lectures and the
+afternoons were  devoted to exercises and project work meant to shed light on the exposed theory, 
+projects  and invited speakers.
 
-The course will be taught as an intensive course of duration of three
-weeks, with a total time of 45 h of lectures, 45 h of exercises and a
-final assignment of 2 weeks of work. The total load will be
-approximately 160-170 hours, corresponding to \textbf{7 ECTS} in
-Europe.  The final assignment will be graded with marks A, B, C, D, E
-and failed for Master students and passed/not passed for PhD
-students. A course certificate will be issued for students requiring
-it from the University of Trento.
+The total load was estimated to correspond to approximately 170 hours, corresponding to  {\bf 7 credits ECTS} in Europe.
+The days were organized as follows: 9.15-12.15 lectures, time for exercises with assistance (including lunch)
+till approximately 18 (3-4 hours of allocated exercise and project work sessions per day).
+The course was held at the premises of the  ECT* (Villazzano) in Trento, Italy, from
+June 16 to July 4 in 2025.
 
-The organization of a typical course day is as follows:
+The students were divided into  groups from the very first day of the school. These groups remained stable throughout the whole duration of the course. Students collaborated and worked on exercises and projects through their respective groups. The groups where carefully put together to maximize diversity of backgrounds. 
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  9am-12pm: Lectures, project relevant information and directed
-  exercises
-\item
-  12pm-2pm: Lunch
-\item
-  2pm-6pm: Computational projects, exercises and hands-on sessions
-\item
-  6pm-7pm: Wrap-up of the day and eventual student presentations
-\end{enumerate}
+We organized several events (weekly social dinners as well) where individuals and groups exchange their experiences, difficulties and successes to foster interaction.  The first two weeks we invited as speakers Justin Lietz from Nvidia (former MSU graduate student and participant at several Nuclear Talent schools) and Federica Mantegazzini, an experimentalist working on quantum technologies  from the FBK foundation in Trento.
 
-If approved by the ECT* board of directors, our preferred time slot
-would be from the second half of June till the second half of July.
+Five students handed in their final reports and requested credits. 
+  
 
-
-\subsubsection{First week, schedule and learning outcomes}
-
+\subsection{Course Schedule}
+  
+Lectures were approximately 45 min each with a small break between each lecture. 
+The final schedule (with links to the educational material) is listed here.
 \begin{table}[hbtp]
-\begin{tabular}{|l|l|l|l|l|} \hline
-    & First session  & Second session  & Exercises and project work & Student presentations \\ \hline
-  Monday & Review of Linear Algebra and & Qubits, measurements and  & Work on codes for basis & \\
-         & density matrices and states & quantum gates and circuits & and quantum gates & \\
-  Tuesday & Quantum Fourier & Quantum phase  & QFT exercises &  \\
-          & transforms (QFT) & estimation algorithm (QPE) & and codes & \\
-  Wednesday  & Quantum algorithms &  Quantum advantage & Work on exercises & \\    
-  Thursday & Variational Quantum & Simple Hamiltonians & Implementing QPE & \\
-            & Eigensolver (VQE) & & Work  on VQE & \\
-  Friday  & Nuclear physics  & Lipkin model & VQE implementation & \\
-           & Hamiltonians     & and Rodeo algorithm  & of the Lipkin model & \\ \hline
+{\footnotesize
+\begin{tabular}{l l l l}\hline
+\textbf{Week and date} & \textbf{Time} & \textbf{Topic} & \textbf{Lecturer}\\
+\hline
+
+% =========================
+% WEEK 1
+% =========================
+Week 1 -- Mon Jun 16 & 08:00--09:00 & Registration &  \\
+& 09:00--09:15 & Welcome by ECT* director Bira van Kolck &  \\
+& 09:15--10:00 & Basic elements of quantum computing and review of quantum mechanics (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune16/Firstlecture.ipynb}{Lecture material}) & Morten \\
+& 10:00--10:15 & Break &  \\
+& 10:15--11:00 & Qubits, density matrices, and entanglement (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune16/Secondlecture.ipynb}{Lecture material}) & Morten \\
+& 11:00--11:30 & Coffee break &  \\
+& 11:30--12:15 & Quantum gates and quantum circuits (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune16/Thirdlecture.ipynb}{Lecture material}) & Morten \\
+& 12:15--14:30 & Lunch &  \\
+& 14:30--18:00 & Exercises on Qiskit, gates, measurements, teleportation, T-injection (advanced) (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises}{Exercises}) &  \\
+
+Week 1 -- Tue Jun 17 & 09:15--10:00 & Review and introduction to quantum simulations (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune17/Firstlecture.ipynb}{Lecture material}) & Morten \\
+& 10:00--10:15 & Break &  \\
+& 10:15--11:00 & Measuring observables, Hadamard test, non-unitary gates (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune17/slides_tuesday_second_and_third.pdf}{Lecture material}) & Alessandro \\
+& 11:00--11:30 & Coffee break &  \\
+& 11:30--12:15 & Hamiltonian dynamics methods (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune17/slides_tuesday_second_and_third.pdf}{Lecture material}) & Alessandro \\
+& 12:15--14:30 & Lunch &  \\
+& 15:30--17:00 & Seminar: Quantum Computing at NVIDIA (\href{https://developer.nvidia.com/blog/author/jlietz/}{Justin Lietz}) &  \\
+& 14:30--15:30, 17:00--18:00 & Exercises: time evolution, observables, Hadamard test (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises}{Exercises}) &  \\
+
+Week 1 -- Wed Jun 18 & 09:15--12:15 & Hamiltonian formulation of lattice gauge theories I--III (\href{https://drive.google.com/file/d/1cxXbFsvM0VmpCPmC0dEwOSxOk6ut2LMq/view}{Lecture material}) & Zohreh \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & Exercises: lattice Schwinger model (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises}{Exercises}) &  \\
+
+Week 1 -- Thu Jun 19 & 09:15--12:15 & Quantum computation of gauge theory time evolution I--III (\href{https://drive.google.com/file/d/1pCn-q7zwCfVOBq-YJsgTK0Wx_1GWgzo0/view}{Lecture material}) & Zohreh \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & Exercises (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/Exercises}{Exercises}) &  \\
+
+Week 1 -- Fri Jun 20 & 09:15--12:15 & Quantum computation of lattice gauge theories IV--V and perspectives (\href{https://drive.google.com/file/d/1pCn-q7zwCfVOBq-YJsgTK0Wx_1GWgzo0/view}{Lecture material}) & Zohreh \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & Exercises & Chung-Chun Hsieh \\
+
+% =========================
+% WEEK 2
+% =========================
+Week 2 -- Mon Jun 23 & 09:15--12:15 & Variational Quantum Eigensolver (VQE) I--III (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune23/}{Lecture material}) & Morten \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & VQE Exercises &  \\
+
+Week 2 -- Tue Jun 24 & 09:15--12:15 & Nuclear Hamiltonians, Jordan--Wigner, Trotter evolution, observables (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJune24/}{Lecture material}) & Alexei, Ryan \\
+& 14:00--15:00 & Exercise: Implement Trotter evolution (\href{https://colab.research.google.com/drive/1SrJPAON0dgBfNSVbiYclZUdYb10Ptx4p}{Colab}) &  \\
+& 15:00--16:00 & Seminar: Quantum Technologies in Trento (\href{https://sd.fbk.eu/en/people/detail/federica-mantegazzini/}{Federica Mantegazzini}) &  \\
+& 16:00--17:00 & Exercises &  \\
+
+Week 2 -- Wed Jun 25 & 09:15--12:15 & Quantum Fourier Transform and Quantum Phase Estimation I--II (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/WednesdayJune25/}{Lecture material}) & Alexei, Ryan \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & Exercise on QPE (\href{https://colab.research.google.com/drive/16cgf3gOcz0Q6JRJzcIqhFZXh-17mscmM}{Colab}) &  \\
+
+Week 2 -- Thu Jun 26 & -- & ECT* closed (Feste Vigiliane) &  \\
+
+Week 2 -- Fri Jun 27 & 09:15--12:15 & Quantum channels and errors; error mitigation; state preparation for the Schwinger model (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/FridayJune27/}{Lecture material}) & Ryan, Alexei \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & Exercise on ZNE (\href{https://colab.research.google.com/drive/1oMrqgKfs_g_K8jGAvA9c0O7vuIVUDzZ9}{Colab}) &  \\
+
+% =========================
+% WEEK 3
+% =========================
+Week 3 -- Mon Jun 30 & 09:15--12:15 & Rodeo algorithm, adiabatic state preparation, nuclear physics applications I--III (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/MondayJune30/}{Lecture material}) & Dean \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & Project work &  \\
+
+Week 3 -- Tue Jul 1 & 09:15--12:15 & Rodeo algorithm IV--VI (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/TuesdayJuly1/}{Lecture material}) & Dean \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & Project work &  \\
+
+Week 3 -- Wed Jul 2 & 09:15--12:15 & Modern techniques (LCU, QSP, QDRIFT) I--III (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/WednesdayJuly2/}{Lecture material}) & Alessandro \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & Project work &  \\
+
+Week 3 -- Thu Jul 3 & 09:15--11:00 & Quantum error correction I--II (\href{https://github.com/NuclearTalent/TalentQuantumComputingECT2025/blob/main/doc/pub/ThursdayJuly3/}{Lecture material}) & Alessandro \\
+& 11:00--11:30 & Coffee break &  \\
+& 11:30--12:15 & Discussion of projects and summary of course &  \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & Project work &  \\
+
+Week 3 -- Fri Jul 4 & 09:15--10:00 & Discussion and work on projects &  \\
+& 10:00--10:15 & Break &  \\
+& 10:15--11:00 & Discussion and work on projects &  \\
+& 11:00--11:30 & Coffee break &  \\
+& 11:30--12:15 & Discussion and work on projects &  \\
+& 12:15--14:00 & Lunch &  \\
+& 14:00--17:00 & Project work and end of TALENT course &  \\ \hline
 \end{tabular}
-\caption{Teaching schedule first week}
+}
 \end{table}
 
-The first week focuses, after a reminder of central linear algebra
-elements, on basic ingredients of quantum computing such as rewriting
-quantum mechanical operations as quantum gates and circuits, how to
-perform measurements and how to obtain eigenvalues of selected
-Hamiltonians. We will also (Wednesday) discuss some selected quantum
-algorithms, such as Grover's algorithm, Simon's algorithms and quantum
-advantage via Shor's algorithm.
 
 
-To obtain the eigenvalues we will discuss the quantum
-phase estimation algorithm (which requires a discussion of Quantum
-Fourier transforms) and the widely used variational quantum
-eigensolver (VQE). After having introduced some simpler Hamiltonians
-defined by various Pauli matrices, we will demonstrate how to rewrite
-a widely used Hamiltonian given by a second-quantized representation
-in terms of various Pauli matrices. The Hamiltonian we will focus on
-the first week is Lipkin Hamiltonian which does not require
-a so-called Jordan-Wigner transformation. This transformation will
-be discussed during the second week.  The students will work on
-analytical exercises as well as computational exercises. The latter
-will focus on developing a code which implements the VQE method for
-finding the eigenvalues of the above Hamiltonians.  The Rodeo algorithm will also be discussed. This code can be
-extended upon and can be used to define a final project students can
-hand in for final credits.
+\subsection{Teachers and organizers}
+The teaching teams consisted of quantum computing theorists and nuclear
+theorists, with expertise ranging from many-body methods to quantum
+field theories. Several of us had developed courses on quantum
+computing and/or taught similar courses, in addition to our ongoing
+research on quantum computing and nuclear many-body physics. 
 
-Many of the topics discussed during the first week, will serve as
-background material for the next two weeks.
-
-The schedule for the student presentations will be finalized during
-the Talent course.
-
-\subsubsection{Second week, schedule and learning outcomes}
+The organizers and teachers were
 
 
-\begin{table}[hbtp]
-\begin{tabular}{|l|l|l|l|l|} \hline
-& First session  & Second session  & Exercises and project work & Student presentations \\ \hline
-  Monday  & Hamiltonian dynamics & Lie-Trotter-Suzuki & Work on VQE& \\
-          &                      & formulas for simulations  & and exercises & \\ 
-  Tuesday & Encoding (relativistic and nonrelativistic)  & Encoding & Exercises & \\
-          & fermions and bosons on quantum computers     & second part & and project work & \\              
-  Wednesday & Quantum simulation & Quantum simulation  & Simulations  & \\
-            & of pionless EFT    & of pionless EFT, part 2 & of pionless EFT & \\
-  Thursday & Nuclear response & Neutrino dynamics  & Exercises and & \\
-           & functions  &  in dense environments & project work & \\
-  Friday & Noise mitigation and & Quantum error correction   & Exercises and project work & \\ 
-  & NISQ computing & fault tolerance  &  & \\ \hline  
-\end{tabular}
-\caption{Tentative schedule second  week}
-\end{table}
-
-The second week starts with a discussion of product formulae such as
-the Lie-Trotter-Suzuki approximation and how to simulate Hamiltonian
-dynamics.  Thereafter we discuss in detail how to encode fermionic and
-bosonic systems through for example the so-called Jordan-Wigner
-transformation. This will allow us to study more general Hamiltonians
-such as a pionless EFT based Hamiltonian and nuclear response function
-and neutrino dynamics.  Entanglement in nuclear many-body systems will
-also be discussed before we wrap up the week with a discussion of
-noise mitigation and quantum error correction algorithms.
-
-Given the more general Hamiltonians, the codes developed during the
-first week can be extended to include more Hamiltonians and systems of
-relevance for nuclear physics.
-
-
-\subsubsection{Third week, schedule and learning outcomes}
-
-
-\begin{table}[hbtp]
-\begin{tabular}{|l|l|l|l|l|} \hline
-    & First session  & Second session  & Exercises and project work & Student presentations \\ \hline
-  Monday & Quantum simulation of   & Quantum simulation of   & Exercises & \\
-         & scattering in scalar field theory, I & scattering in scalar field theory, II & and project work & \\
-  Tuesday & Hamiltonian formulations of & Hamiltonian formulations of & Exercises & \\
-          & gauge theories (Abelian)    & gauge theories (non-Abelian) & and project work & \\
-  Wednesday & Time evolution  & Time evolution & Exercises  & \\
-            & in gauge theories & in gauge theories & and project work \\
-  Thursday & Applications to QFT & Applications to QFT& Project work & \\
-  Friday & Summary of course & Discussion of projects  & Project work & \\ \hline
-\end{tabular}
-\caption{Teaching schedule third  week}
-\end{table}
-
-Depending on our progress during the first two weeks, the schedule of
-the last week may be subject to changes. The tentative plan for the
-final week is to dedicate it a discussion of quantum computing for
-quantum (gauge) field theories. Here the learning outcomes will focus
-on quantum simulations of scattering in scalar field theory,
-Hamiltonian formulations of gauge theories and time evolution in gauge
-theories, Abelian and non-Abelian, with final applications. The course
-ends with a summary and discussions of the projects.
-
-
-
-
-\subsection{Instructors and organizers}\label{instructors-and-organizers}
-
-The organizers and instructors are
 
 
 \begin{enumerate}
@@ -693,63 +245,88 @@ University, East Lansing, MI 48824, USA. He is a theoretical particle physicist 
   Trento, Italy. He works on  simulations of strongly correlated quantum many-body systems using a combination of classical techniques and calculations on
 quantum devices. In particular, in understanding the role of entanglement in both observable properties of physical systems and as a fundamental tool to understand the structure of many-body states. His research interests include quantum simulations of inelastic nuclear processes, neutrinos in dense matter, quantum computing and algorithms, quantum Monte Carlo methods and effective field theory.
 
-\item
-  An eventual Post-doctoral fellow and an advanced graduate student as
-  teaching assistants.
+
 \end{enumerate}
 
-Morten Hjorth-Jensen and Alessandro Roggero will also function as student
+Morten Hjorth-Jensen and Alessandro Roggero functioned as student
 advisors and coordinators.
 
-\subsection{Audience and Prerequisites}
-The potential participants are
-Students and post-doctoral fellows interested in quantum computing
-applied to nuclear physics problems, from nuclear structure problems to quantum
-field theories. The material will be of interest, and accessible, to
-both theorists and experimentalists, and will include learning the
-practical use of quantum computing software in order to interpret and
-study nuclear systems.
 
-The students are expected to have operating programming skills in
-compiled programming languages like Fortran or C++ or preferentially in
-an interpreted language like Python and knowledge of quantum mechanics
-at an intermediate level.
+\subsection{Budget}
 
-\subsection{Admission}
+The ECT* sponsored all lunches and two social dinners for all participants, teachers included. Furthermore, all students and teachers got their housing expenses covered by the ECT*, except for students and teachers from the University of Trento. The FRIB-Theory alliance sponsored travel for several US participants. For the other participants, travel was covered by their respective home institutions.
 
-The target group is Master of Science students, PhD students and early
-post-doctoral fellows. Also senior staff can attend but they have to be
-self-supported. The maximum number of students is 20-30, of which
-hopefully 15-20 can receive full local support.
 
-The process of selections of the students will be managed in agreement
-with the ECT*.
+\subsection{Participants with their home institutions and nationalities}
 
-\subsection{Preliminary budget}
+The target group for the Nuclear Talent courses was Master of Science students, PhD students and early post-doctoral fellows.
+Out of 52 applicants, 32 students were selected. Priority was given
+to Master of Science students and early PhD students. 
 
-We expect to accept between 20-30 students. Local students from the
-University of Trento are fully self-supported. If approved, we would
-very much appreciate if the ECT* can sponsor 15-20 of the selected
-students with local expenses, that is lodging and meals during weekdays.
-Any additional funds for sponsoring further students is highly
-appreciated.
+The students were expected to have operating programming skills in C++ and/or Python and knowledge of
+quantum mechanics at an intermediate level, with some basic knowledge of 
+many-body physics and also quantum computing. 
+Sixteen different  nationalities (participants and teachers included) and 24 different institutions/affiliations 
+were represented. 
+The students, their respective institutions and nationalities are listed in the table below. 
+\begin{table}[hbtp]
+  \begin{ruledtabular}
+    \begin{tabular}{|l||l|l|}
+     Name & Institution &Nationality   \\\hline
+Cobos Jiminez, Jesus & University of Basque Country & Spain\\
+Gallego Lizarribar, Kerman  & University of Barcelona & Spain\\
+Hsieh, Chung-Chun  & University of Maryland & Taiwan\\
+Heimsoth, Daniel  & University of Wisconsin & USA\\
+Jiang, Chongji  & Beijing University & China\\
+Andagana Rios, Pablo  &  Pontificia Universidad Católica de Chile & Ecuador\\
+Gibbs, Joe  & University of Surrey & UK \\
+Brolli, Stefano  & University of Milano & Italy\\
+Nunziata, Gennaro  & Universita della Campania Luigi Vanvitelli & Italy\\
+Le Noan, Oscar  & IPHC - CNRS - University of Strasbourg & France \\
+Bofos, Stavros  & CEA  & Greece\\
+Sarma, Chandan  & University of Surrey & India\\
+Salim, Nabeel  & Indian Institute of Technology Roorkee & India \\
+Dassie, Alan Cruz  & GANIL & France \\
+Merritt, Hosea  & Ohio State Universty  & USA\\
+Azam, Clementine  & CEA & France\\
+Di Donna, Andrea  & University of Trento & Italy\\
+Restrepo-Giraldo, Alejandro  & University of York & Colombia\\
+Cariello, Nicholas  & Michigan State University & USA\\
+Mahendra Shinde, Rohit  & Indian Institute of Technology Roorkee & India\\
+Parini, Luca  &	University of Salento  & Italy\\
+Das, Ankit Kumar  & Indian Institute of Technology Roorkee & India\\
+Ghosh, Tanmoy  & University of Zagreb  & India \\
+Sainato, Steven  & CEA  & France\\
+Nigro, Luca  & Universiy of Milano  & Italy\\
+Covalam Vijayakumar, Nithish Kumar  & TU Darmstadt & India\\
+Sola Cava, Josep  & Ruhr University Bochum & Spain \\
+Urvashi, Urvashi  & Indian Institute of Technology Roorkee & India\\
+Jai, Prakash  &	Indian Institute of Technology Goa & India\\
+Krueger, Raphael  & Ruhr University & Germany \\
+Kaur, Karmjeet  & Akai University & India\\
+Rani, Saba  & University of Trento & Pakistan\\ \hline
+    \end{tabular}
+  \end{ruledtabular}
+\end{table} 
 
-All travel expenses will be covered by the respective home institute.
-Instructors are self-supported. We plan to raise additional funds to
-cover local support for additional students and the expenses of the
-instructors.
+On average, the students performed very well. It was an excellent  and very active group. Five students handed in the final report and received a credit transfer of the seven ECTS from the University of Trento.
+%\includegraphics[width=0.8\columnwidth]{figures/fig2.jpg} 
 
-There is no participation fee. Administrative support from the ECT* in
-organizing the course and setting up the application procedure is
-essential for a smooth (as always) outcome. The administrative
-experience of the staff at the ECT* has been unique and essential in
-running successfully our previous Talent courses. We would thus highly
-appreciate it if these services are provided if the proposal is
-approved.
 
+%\clearpage
+
+\section{Brief summary}
+\includegraphics[width=0.9\columnwidth]{figures/fig3.jpg} \newline\newline
+
+The support from the ECT*, and its year-long experiences with running doctoral training programs and Talent courses, was central to the success of the course. And without the administrative help from Barbara Gazzoli and the staff at the ECT*, this school would not have been possible. Barbara was essential for the success of the school.
+Overall, we as teaching feel the original learning outcomes and goals were met. It was a marvelous group of students to teach. 
 
 
 \end{document}
+
+\
+
+
 
 
 
